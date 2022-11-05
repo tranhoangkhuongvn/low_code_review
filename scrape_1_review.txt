@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <script type="text/javascript">
+   /*
+ Copyright and licenses see https://www.dynatrace.com/company/trust-center/customers/reports/*/
+(function(){"undefined"!==typeof window&&window.setTimeout&&(window.setTimeout=window.setTimeout);this.dT_&&dT_.prm&&dT_.prm();(function(){function ra(){document.cookie="".concat("__dTCookie","=").concat("1",";SameSite=Lax");var Ua=-1!==document.cookie.indexOf("__dTCookie");document.cookie="".concat("__dTCookie","=").concat("1","; expires=Thu, 01-Jan-1970 00:00:01 GMT");return Ua}function La(){return void 0===db.dialogArguments?navigator.cookieEnabled||ra():ra()}function gb(){var Ua;if(La()&&!window.dT_){var Pa=
+(Ua={},Ua.cfg="domain=gartner.com|reportUrl=https://bf28149orj.bf.dynatrace.com/bf|app=c9f1951eb65229e3|dsss=1|cors=1|rcdec=1209600000|featureHash=A2Vfhjqru|vcv=2|rdnt=1|uxrgce=1|bp=3|srmcrv=10|cuc=4vwhu0vt|mel=100000|dpvc=1|md=mdcc1=cWCW_Authentication,mdcc2=cwcw_authentication,mdcc3=buserSotCode,mdcc4=bwindow.isLoggedIn,mdcc5=bwindow.nextJS|ssv=4|lastModification=1667152344708|dtVersion=10243220606153550|srmcrl=1|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_A2Vfhjqru_10243220606153550.js|auto=1|domain=gartner.com|rid=RID_1182978253|rpid=74734094|app=c9f1951eb65229e3",Ua.iCE=La,Ua);window.dT_=Pa}}var db="undefined"!==typeof window?window:self,Ea;db.dT_?(null===(Ea=db.console)||void 0===Ea?void 0:Ea.log("Duplicate agent injection detected, turning off redundant initConfig."),db.dT_.di=1):gb()})()})();
+/*
+ Copyright and licenses see https://www.dynatrace.com/company/trust-center/customers/reports/*/
+(function(){"undefined"!==typeof window&&window.setTimeout&&(window.setTimeout=window.setTimeout);this.dT_&&dT_.prm&&dT_.prm();(function(){function ra(k,w,M){void 0===M&&(M=0);var A=-1;w&&(null===k||void 0===k?0:k.indexOf)&&(A=k.indexOf(w,M));return A}function La(){var k;return!(null===(k=Bb.console)||void 0===k||!k.log)}function gb(k,w){if(!w)return"";var M=k+"=";k=ra(w,M);if(0>k)return"";for(;0<=k;){if(0===k||" "===w.charAt(k-1)||";"===w.charAt(k-1))return M=k+M.length,k=ra(w,";",k),0<=k?w.substring(M,
+k):w.substring(M);k=ra(w,M,k+M.length)}return""}function db(k){return gb(k,document.cookie)}function Ea(){}function Ua(){var k=0;try{k=Math.round(Bb.performance.timeOrigin)}catch(w){}if(0>=k||isNaN(k)||!isFinite(k)){k=0;try{k=Bb.performance.timing.navigationStart}catch(w){}k=0>=k||isNaN(k)||!isFinite(k)?Jd:k}tg=k;J=Pa;return tg}function Pa(){return tg}function za(){return J()}function ab(){var k,w=0;if(null===(k=null===Bb||void 0===Bb?void 0:Bb.performance)||void 0===k?0:k.now)try{w=Math.round(Bb.performance.now())}catch(M){}return 0>=
+w||isNaN(w)||!isFinite(w)?(new Date).getTime()-J():w}function ba(k,w){void 0===w&&(w=document.cookie);return gb(k,w)}function Z(){}function Aa(k,w){return function(){k.apply(w,arguments)}}function na(k){if(!(this instanceof na))throw new TypeError("Promises must be constructed via new");if("function"!==typeof k)throw new TypeError("not a function");this.ka=0;this.oc=!1;this.sa=void 0;this.Ha=[];va(k,this)}function ta(k,w){for(;3===k.ka;)k=k.sa;0===k.ka?k.Ha.push(w):(k.oc=!0,na.Jb(function(){var M=
+1===k.ka?w.xe:w.ye;if(null===M)(1===k.ka?Ma:Ja)(w.promise,k.sa);else{try{var A=M(k.sa)}catch(Ta){Ja(w.promise,Ta);return}Ma(w.promise,A)}}))}function Ma(k,w){try{if(w===k)throw new TypeError("A promise cannot be resolved with itself.");if(w&&("object"===typeof w||"function"===typeof w)){var M=w.then;if(w instanceof na){k.ka=3;k.sa=w;fa(k);return}if("function"===typeof M){va(Aa(M,w),k);return}}k.ka=1;k.sa=w;fa(k)}catch(A){Ja(k,A)}}function Ja(k,w){k.ka=2;k.sa=w;fa(k)}function fa(k){2===k.ka&&0===k.Ha.length&&
+na.Jb(function(){k.oc||na.Qc(k.sa)});for(var w=0,M=k.Ha.length;w<M;w++)ta(k,k.Ha[w]);k.Ha=null}function S(k,w,M){this.xe="function"===typeof k?k:null;this.ye="function"===typeof w?w:null;this.promise=M}function va(k,w){var M=!1;try{k(function(A){M||(M=!0,Ma(w,A))},function(A){M||(M=!0,Ja(w,A))})}catch(A){M||(M=!0,Ja(w,A))}}function ja(){K.Jb=function(k){if("string"===typeof k)throw Error("Promise polyfill called _immediateFn with string");k()};K.Qc=function(){};return K}function U(k,w){return parseInt(k,
+w||10)}function eb(k){return document.getElementsByTagName(k)}function L(k){var w=k.length;if("number"===typeof w)k=w;else{w=0;for(var M=2048;k[M-1];)w=M,M+=M;for(var A=7;1<M-w;)A=(M+w)/2,k[A-1]?w=A:M=A;k=k[A]?M:w}return k}function C(k){for(var w=[],M=1;M<arguments.length;M++)w[M-1]=arguments[M];k.push.apply(k,w)}function H(k){k=encodeURIComponent(k);var w=[];if(k)for(var M=0;M<k.length;M++){var A=k.charAt(M);C(w,Fa[A]||A)}return w.join("")}function Q(k){-1<ra(k,"^")&&(k=k.split("^^").join("^"),k=
+k.split("^dq").join('"'),k=k.split("^rb").join(">"),k=k.split("^lb").join("<"),k=k.split("^p").join("|"),k=k.split("^e").join("="),k=k.split("^s").join(";"),k=k.split("^c").join(","),k=k.split("^bs").join("\\"));return k}function ia(k,w){if(!k||!k.length)return-1;if(k.indexOf)return k.indexOf(w);for(var M=k.length;M--;)if(k[M]===w)return M;return-1}function W(k,w){var M;void 0===w&&(w=[]);if(!k||"object"!==typeof k&&"function"!==typeof k)return!1;var A="number"!==typeof w?w:[],Ta=null,xb=[];switch("number"===
+typeof w?w:5){case 0:Ta="Array";xb.push("push");break;case 1:Ta="Boolean";break;case 2:Ta="Number";break;case 3:Ta="String";break;case 4:Ta="Function";break;case 5:Ta="Object";break;case 6:Ta="Date";xb.push("getTime");break;case 7:Ta="Error";xb.push("name","message");break;case 8:Ta="Element";break;case 9:Ta="HTMLElement";break;case 10:Ta="HTMLImageElement";xb.push("complete");break;case 11:Ta="PerformanceEntry";break;case 12:Ta="PerformanceTiming";break;case 13:Ta="PerformanceResourceTiming";break;
+case 14:Ta="PerformanceNavigationTiming";break;case 15:Ta="CSSRule";xb.push("cssText","parentStyleSheet");break;case 16:Ta="CSSStyleSheet";xb.push("cssRules","insertRule");break;case 17:Ta="Request";xb.push("url");break;case 18:Ta="Response";xb.push("ok","status","statusText");break;case 19:Ta="Set";xb.push("add","entries","forEach");break;case 20:Ta="Map";xb.push("set","entries","forEach");break;case 21:Ta="Worker";xb.push("addEventListener","postMessage","terminate");break;case 22:Ta="XMLHttpRequest";
+xb.push("open","send","setRequestHeader");break;case 23:Ta="SVGScriptElement";xb.push("ownerSVGElement","type");break;case 24:Ta="HTMLMetaElement";xb.push("httpEquiv","content","name");break;case 25:Ta="HTMLHeadElement";break;case 26:Ta="ArrayBuffer";break;case 27:Ta="ShadowRoot",xb.push("host","mode")}w=Ta;if(!w)return!1;xb=xb.length?xb:A;if(!A.length)try{if(Bb[w]&&k instanceof Bb[w]||Object.prototype.toString.call(k)==="[object "+w+"]")return!0;if(k&&k.nodeType&&1===k.nodeType){var ec=null===(M=
+k.ownerDocument.defaultView)||void 0===M?void 0:M[w];if("function"===typeof ec&&k instanceof ec)return!0}}catch(uc){}for(M=0;M<xb.length;M++)if(A=xb[M],"string"!==typeof A&&"number"!==typeof A&&"symbol"!==typeof A||!(A in k))return!1;return!!xb.length}function la(k,w,M,A){"undefined"===typeof A&&(A=Ka(w,!0));"boolean"===typeof A&&(A=Ka(w,A));if(k===Bb)Ya?Ya(w,M,A):Pb&&Pb("on"+w,M);else if(cc&&W(k,21))lc.call(k,w,M,A);else if(k.addEventListener)if(k===Bb.document||k===Bb.document.documentElement)Sb.call(k,
+w,M,A);else try{Ya.call(k,w,M,A)}catch(ec){k.addEventListener(w,M,A)}else k.attachEvent&&k.attachEvent("on"+w,M);A=!1;for(var Ta=$c.length;0<=--Ta;){var xb=$c[Ta];if(xb.object===k&&xb.event===w&&xb.da===M){A=!0;break}}A||C($c,{object:k,event:w,da:M})}function ua(k,w,M,A){for(var Ta=$c.length;0<=--Ta;){var xb=$c[Ta];if(xb.object===k&&xb.event===w&&xb.da===M){$c.splice(Ta,1);break}}"undefined"===typeof A&&(A=Ka(w,!0));"boolean"===typeof A&&(A=Ka(w,A));k===Bb?tb?tb(w,M,A):Pb&&Pb("on"+w,M):k.removeEventListener?
+k===Bb.document||k===Bb.document.documentElement?Ub.call(k,w,M,A):tb.call(k,w,M,A):k.detachEvent&&k.detachEvent("on"+w,M)}function Ka(k,w){var M=!1;try{if(Ya&&-1<ia(Vd,k)){var A=Object.defineProperty({},"passive",{get:function(){M=!0}});Ya("test",Ea,A)}}catch(Ta){}return M?{passive:!0,capture:w}:w}function Hb(){for(var k=$c,w=k.length;0<=--w;){var M=k[w];ua(M.object,M.event,M.da)}$c=[]}function ib(k,w,M){if(M||2===arguments.length)for(var A=0,Ta=w.length,xb;A<Ta;A++)!xb&&A in w||(xb||(xb=Array.prototype.slice.call(w,
+0,A)),xb[A]=w[A]);return k.concat(xb||Array.prototype.slice.call(w))}function aa(k){return"function"===typeof k&&/{\s+\[native code]/.test(Function.prototype.toString.call(k))}function qa(k,w){for(var M,A=[],Ta=2;Ta<arguments.length;Ta++)A[Ta-2]=arguments[Ta];return void 0!==Function.prototype.bind&&aa(Function.prototype.bind)?(M=Function.prototype.bind).call.apply(M,ib([k,w],A,!1)):function(){for(var xb=0;xb<arguments.length;xb++);return k.apply(w,(A||[]).concat(Array.prototype.slice.call(arguments)||
+[]))}}function V(){if(yd){var k=new yd;if(Kd)for(var w=0,M=ie;w<M.length;w++){var A=M[w];void 0!==Kd[A]&&(k[A]=qa(Kd[A],k))}return k}return dd?new dd("MSXML2.XMLHTTP.3.0"):Bb.XMLHttpRequest?new Bb.XMLHttpRequest:new Bb.ActiveXObject("MSXML2.XMLHTTP.3.0")}function pa(){document.cookie="".concat("__dTCookie","=").concat("1",";SameSite=Lax");var k=-1!==document.cookie.indexOf("__dTCookie");document.cookie="".concat("__dTCookie","=").concat("1","; expires=Thu, 01-Jan-1970 00:00:01 GMT");return k}function Va(){return void 0===
+Bb.dialogArguments?navigator.cookieEnabled||pa():pa()}function nb(){return Ne}function lb(k){Ne=k}function jb(k){var w=I("rid"),M=I("rpid");w&&(k.rid=w);M&&(k.rpid=M)}function Ab(k){if(k=k.xb){k=Q(k);try{Ne=new RegExp(k,"i")}catch(w){}}else Ne=void 0}function gc(k){return"n"===k||"s"===k||"l"===k?";SameSite=".concat(ig[k]):""}function Vb(k,w,M){var A=1,Ta=0;do document.cookie=k+'=""'+(w?";domain="+w:"")+";path="+M.substring(0,A)+"; expires=Thu, 01 Jan 1970 00:00:01 GMT;",A=M.indexOf("/",A),Ta++;while(-1!==
+A&&5>Ta)}function Ha(k){var w={},M=0;for(k=k.split("|");M<k.length;M++){var A=k[M].split("=");2===A.length&&(w[A[0]]=decodeURIComponent(A[1].replace(/\+/g," ")))}return w}function yb(){var k=I("csu");return(k.indexOf("dbg")===k.length-3?k.substring(0,k.length-3):k)+"_"+I("app")+"_Store"}function vb(k,w,M){void 0===w&&(w={});var A=0;for(k=k.split("|");A<k.length;A++){var Ta=k[A],xb=Ta,ec=ra(Ta,"=");-1===ec?w[xb]="1":(xb=Ta.substring(0,ec),w[xb]=Ta.substring(ec+1,Ta.length))}!M&&(M=w,A=M.spc)&&(k=document.createElement("textarea"),
+k.innerHTML=A,M.spc=k.value);return w}function ca(k){var w;return null!==(w=xc[k])&&void 0!==w?w:Yc[k]}function Oa(k){k=ca(k);return"false"===k||"0"===k?!1:!!k}function Za(k){var w=ca(k);w=U(w);isNaN(w)&&(w=Yc[k]);return w}function I(k){return String(ca(k)||"")}function ka(k,w){xc[k]=String(w)}function Ba(k){return xc=k}function $a(k){xc[k]=0>ra(xc[k],"#"+k.toUpperCase())?xc[k]:""}function Cb(k){var w=k.agentUri;w&&-1<ra(w,"_")&&(w=/([a-zA-Z]*)[0-9]{0,4}_([a-zA-Z_0-9]*)_[0-9]+/g.exec(w))&&w.length&&
+2<w.length&&(k.csu=w[1],k.featureHash=w[2])}function bd(k){var w=k.domain||"";var M=(M=location.hostname)&&w?M===w||-1!==M.indexOf("."+w,M.length-("."+w).length):!0;if(!w||!M){k.domainOverride||(k.domainOriginal=k.domain||"",k.domainOverride="".concat(location.hostname,",").concat(w),delete k.domain);var A=I("cssm");var Ta=document.domain||"";if(Ta){Ta=Ta.split(".").reverse();var xb=Ta.length;if(1>=xb)A="";else{for(var ec=Ta[0],uc="",qc=1;qc<=xb;qc++)if(ba("dTValidationCookie")){uc=ec;break}else{Ta[qc]&&
+(ec="".concat(Ta[qc],".").concat(ec));var ud="".concat("dTValidationCookie","=dTValidationCookieValue;path=/;domain=").concat(ec);ud+=gc(A);document.cookie=ud}Vb("dTValidationCookie",uc,"/");A=uc}}else A="";A&&(k.domain=A);M||C(me,{type:"dpi",severity:"Warning",text:'Configured domain "'.concat(w,'" is invalid for current location "').concat(location.hostname,'". Agent will use "').concat(k.domain,'" instead.')})}}function Qb(k,w){bd(k);var M=xc.pVO;M&&(k.pVO=M);w||(w=k.bp||Yc.bp,k.bp2&&(w=2),k.bp=
+String(w))}function Zb(){return xc}function q(k){return Yc[k]===ca(k)}function D(){if(Bb.MobileAgent||Bb.dynatraceMobile){var k=db("dtAdkSettings");return Vf.dT_.p3SC(k).privacyState||null}return null}function t(){var k=D();return 2===k||1===k?!1:!Vf.dT_.bcv("coo")||Vf.dT_.bcv("cooO")||Vf.dT_.iSM()}function y(k,w){return!t()||Bb.dT_.overloadPrevention&&!mc()?null:k.apply(this,w||[])}function Y(k,w){try{var M=Ld;M&&M.setItem(k,w)}catch(A){}}function x(k,w){y(Y,[k,w])}function oa(k){try{var w=Ld;if(w)return w.getItem(k)}catch(M){}return null}
+function R(k){try{var w=Ld;w&&w.removeItem(k)}catch(M){}}function O(k){document.cookie=k+'="";path=/'+(I("domain")?";domain="+I("domain"):"")+"; expires=Thu, 01 Jan 1970 00:00:01 GMT;"}function wa(k,w,M,A){Oe=!0;w||0===w?(w=String(w).replace(/[;\n\r]/g,"_"),k=k+"="+w+";path=/"+(I("domain")?";domain="+I("domain"):""),M&&(k+=";expires="+M.toUTCString()),k+=gc(I("cssm")),A&&"https:"===location.protocol&&(k+=";Secure"),document.cookie=k):O(k);Oe=!1}function Ga(k,w,M,A){y(wa,[k,w,M,A])}function Wa(k){return-1===
+ra(k,"v_4")?!1:!0}function Eb(k){k=ba("dtCookie",k);k||((k=oa("dtCookie"))&&Wa(k)?Lb(k):k="");return Wa(k)?k:""}function Lb(k){Ga("dtCookie",k,void 0,Oa("ssc"))}function Nb(k){return(k=k||Eb())?Oc(k):{sessionId:"",serverId:"",overloadState:0}}function ac(k){return Nb(k).serverId}function rc(k){return Nb(k).sessionId}function mc(){return 0<=ra(navigator.userAgent,"RuxitSynthetic")}function Oc(k){var w={sessionId:"",serverId:"",overloadState:0},M=k.split("_");if(2<M.length&&0===M.length%2){k=Number(M[1]);
+if(isNaN(k)||3>k)return w;k={};for(var A=2;A<M.length;A++)k[M[A]]=M[A+1],A++;k.sn?(M=k.sn,M=M.length===cd||12>=M.length?M:""):M="hybrid";w.sessionId=M;if(k.srv){a:{M=k.srv.replace("-2D","-");if(!isNaN(Number(M))&&(A=U(M),-99<=A&&99>=A))break a;M=""}w.serverId=M}M=Number(k.ol);if(1===M){A=mc();var Ta=Bb.dT_;A||(x("dtDisabled","true"),Ta.disabled=!0,Ta.overloadPrevention=!0)}0<=M&&2>=M&&(w.overloadState=M);k=Number(k.prv);isNaN(k)||(w.privacyState=1>k||4<k?1:k)}return w}function Kc(){return Vc()}function gd(k,
+w){function M(){delete Bg[xb];k.apply(this,arguments)}for(var A=[],Ta=2;Ta<arguments.length;Ta++)A[Ta-2]=arguments[Ta];if("apply"in Ee){A.unshift(M,w);var xb=Ee.apply(Bb,A)}else xb=Ee(M,w);Bg[xb]=!0;return xb}function ma(k){delete Bg[k];"apply"in Fe?Fe.call(Bb,k):Fe(k)}function Ca(k){C(tf,k)}function Ra(k){for(var w=tf.length;w--;)if(tf[w]===k){tf.splice(w,1);break}}function Sa(){return tf}function Db(k,w){return mi(k,w)}function Yb(k){Ge(k)}function Na(k,w){if(!Wd||!jg)return"";k=new Wd([k],{type:w});
+return jg(k)}function oc(k,w){return je?new je(k,w):void 0}function rb(k){"function"===typeof k&&C(Wf,k)}function wb(){return Wf}function pc(){return Jd}function Sc(k){return function(){for(var w=[],M=0;M<arguments.length;M++)w[M]=arguments[M];if("number"!==typeof w[0]||!Bg[w[0]])try{return k.apply(this,w)}catch(A){return k(w[0])}}}function ed(){return me}function $b(){J=Ua;Bb.performance&&(Vc=function(){return Math.round(J()+ab())});if(!Vc||isNaN(Vc())||0>=Vc()||!isFinite(Vc()))Vc=function(){return(new Date).getTime()}}
+function Ac(){kg&&(Bb.clearTimeout=Fe,Bb.clearInterval=Ge,kg=!1)}function Ic(k,w){try{Bb.localStorage&&Bb.localStorage.setItem(k,w)}catch(M){}}function Nc(k){try{Bb.localStorage&&Bb.localStorage.removeItem(k)}catch(w){}}function qd(){Nc("rxec");Nc("rxvisitid");Nc("rxvt")}function ad(k){t()?k():(Cf||(Cf=[]),C(Cf,k))}function dc(k){return y(k)}function Lc(){if(Oa("coo")&&!t()){for(var k=0,w=Cf;k<w.length;k++)gd(w[k],0);Cf=[];ka("cooO",!0)}}function jd(){if(Oa("coo")&&t()){ka("cooO",!1);O("dtCookie");
+O("dtPC");O("dtLatC");O("dtSa");O("dtAdk");O("rxVisitor");O("rxvt");try{R("rxec");R("rxvisitid");R("rxvt");qd();var k=Ld;k&&(k.removeItem("rxVisitor"),k.removeItem("dtCookie"));if(k=lg)k.removeItem(yb()),k.removeItem("dtAdk")}catch(w){}}}function bc(k,w){void 0===w&&(w=document.cookie||"");return w.split(k+"=").length-1}function ic(k,w){var M=bc(k,w);if(1<M){w=I("domain")||Bb.location.hostname;var A=Bb.location.hostname,Ta=Bb.location.pathname,xb=0,ec=0;nf.push(k);do{var uc=A.substring(xb);if(uc!==
+w||"/"!==Ta){Vb(k,uc===w?"":uc,Ta);var qc=bc(k);qc<M&&(nf.push(uc),M=qc)}xb=A.indexOf(".",xb)+1;ec++}while(0!==xb&&10>ec&&1<M);I("domain")&&1<M&&Vb(k,"",Ta)}}function Pd(){var k=document.cookie;ic("dtPC",k);ic("dtCookie",k);ic("dtLatC",k);ic("rxvt",k);0<nf.length&&C(me,{severity:"Error",type:"dcn",text:"Duplicate cookie name".concat(1!==nf.length?"s":""," detected: ").concat(nf.join(", "))});Ca(function(w,M,A,Ta){0<nf.length&&!M&&(w.av(Ta,"dCN",nf.join(",")),nf=[]);0<ih.length&&!M&&(w.av(Ta,"eCC",
+ih.join(",")),ih=[])})}function af(k){var w=k,M=Math.pow(2,32);return function(){w=(1664525*w+1013904223)%M;return w/M}}function Se(k,w){return isNaN(k)||isNaN(w)?Math.floor(33*Rg()):Math.floor(Rg()*(w-k+1))+k}function Qd(k){if(!k)return"";var w=Bb.crypto||Bb.msCrypto;if(w&&-1===ra(navigator.userAgent,"Googlebot"))w=w.getRandomValues(new Uint8Array(k));else{w=[];for(var M=0;M<k;M++)w.push(Se(0,32))}k=[];for(M=0;M<w.length;M++){var A=Math.abs(w[M]%32);k.push(String.fromCharCode(A+(9>=A?48:55)))}return k.join("")}
+function ke(){return of}function Wc(k){k&&(null===k||void 0===k?0:k.configurable)&&k.set&&k.get&&Object.defineProperty(document,"cookie",{get:function(){return k.get.call(document)},set:function(w){var M=w.split("=")[0];k.set.call(document,w);Oe?1<bc(M)&&nf.push(M):-1<ia(Xf,M)&&(ih.push(M),-1===ia(Sg,M)&&(C(Sg,M),C(me,{severity:"Error",type:"ecm",text:"Invalid modification of agent cookie ".concat(M," detected. Modifying Dynatrace cookies may result in missing or invalid data.")})))}})}function Te(k){void 0===
+k&&(k=!0);Cg=k}function Bd(k,w,M){var A=Za("pcl");A=k.length-A;0<A&&k.splice(0,A);A=ac(ba("dtCookie",M));for(var Ta=[],xb=A?"".concat(A,"$"):"",ec=0;ec<k.length;ec++){var uc=k[ec];"-"!==uc.G&&Ta.push("".concat(xb).concat(uc.frameId,"h").concat(uc.G))}k=Ta.join("p");k||(Cg&&(E(!0,"a",M),Te(!1)),k+="".concat(A,"$").concat(of,"h-"));k+="v".concat(w||ye(M));Ga("dtPC",k+"e0",void 0,Oa("ssc"))}function Rd(k,w){void 0===w&&(w=document.cookie);var M=ba("dtPC",w);w=[];if(M&&"-"!==M){var A="";var Ta=0;for(M=
+M.split("p");Ta<M.length;Ta++){var xb=M[Ta],ec=A,uc=k;void 0===ec&&(ec="");A=ra(xb,"$");var qc=ra(xb,"h");var ud=ra(xb,"v"),We=ra(xb,"e");A=xb.substring(A+1,qc);qc=-1!==ud?xb.substring(qc+1,ud):xb.substring(qc+1);ec||-1===ud||(ec=-1!==We?xb.substring(ud+1,We):xb.substring(ud+1));xb=null;uc||(uc=U(A.split("_")[0]),ud=Vc()%Tg,ud<uc&&(ud+=Tg),uc=uc+9E5>ud);uc&&(xb={frameId:A,G:"-"===qc?"-":U(qc),visitId:""});A=ec;(qc=xb)&&w.push(qc)}for(k=0;k<w.length;k++)w[k].visitId=A}return w}function Xe(k,w){var M=
+document.cookie;w=Rd(w,M);for(var A=!1,Ta=0;Ta<w.length;Ta++){var xb=w[Ta];xb.frameId===of&&(xb.G=k,A=!0)}A||C(w,{frameId:of,G:k,visitId:""});Bd(w,void 0,M)}function ye(k){return zd(k)||E(!0,"c",k)}function zd(k){if(fc(k)<=Vc())return E(!0,"t",k);var w=vd(k);if(!w)return E(!0,"c",k);var M=ni.exec(w);if(!M||3!==M.length||32!==M[1].length||isNaN(U(M[2])))return E(!0,"i",k);x("rxvisitid",w);return w}function ze(k,w){var M=Vc();w=Ib(w).Gc;k&&(w=M);bb(M+Df+"|"+w);sa()}function ne(k){var w="t"+(Vc()-fc(k)),
+M=vd(k),A=He();ve(A,k);N(A,w,M)}function vd(k){var w,M;return null!==(M=null===(w=Rd(!0,k)[0])||void 0===w?void 0:w.visitId)&&void 0!==M?M:oa("rxvisitid")}function He(){var k=Qd(cd);k=k.replace(/[0-9]/g,function(w){w=.1*U(w);return String.fromCharCode(Math.floor(25*w+65))});return k+"-0"}function ve(k,w){var M=Rd(!1,w);Bd(M,k,w);x("rxvisitid",k);ze(!0)}function u(k,w,M){return E(k,w,M)}function E(k,w,M){k&&(Ef=!0);k=vd(M);M=He();ve(M);N(M,w,k);return M}function N(k,w,M){if(vd(document.cookie))for(var A=
+0,Ta=Yf;A<Ta.length;A++)(0,Ta[A])(k,Ef,w,M)}function ha(k){Yf.push(k)}function sa(k){wd&&ma(wd);wd=gd(Ia,fc(k)-Vc())}function Ia(){var k=document.cookie;if(fc(k)<=Vc())return y(ne,[k]),!0;ad(sa);return!1}function bb(k){Ga("rxvt",k,void 0,Oa("ssc"));x("rxvt",k)}function cb(k,w){(w=ba(k,w))||(w=oa(k)||"");return w}function Fb(){var k=zd()||"";x("rxvisitid",k);k=cb("rxvt");bb(k);qd()}function Ib(k){var w={Ad:0,Gc:0};if(k=cb("rxvt",k))try{var M=k.split("|");2===M.length&&(w.Ad=parseInt(M[0],10),w.Gc=
+parseInt(M[1],10))}catch(A){}return w}function fc(k){k=Ib(k);return Math.min(k.Ad,k.Gc+Mf)}function Ec(k){Df=k}function ld(){var k=Ef;Ef=!1;return k}function fd(){Ia()||ze(!1)}function hd(k){try{if(Bb.localStorage)return Bb.localStorage.getItem(k)}catch(w){}return null}function od(){var k=ba("rxVisitor");k&&45===(null===k||void 0===k?void 0:k.length)||(k=hd("rxVisitor")||oa("rxVisitor"),45!==(null===k||void 0===k?void 0:k.length)&&(Nf=!0,k=String(Vc()),k+=Qd(45-k.length)));we(k);return k}function we(k){if(Oa("dpvc")||
+Oa("pVO"))x("rxVisitor",k);else{var w=new Date;var M=w.getMonth()+Math.min(24,Math.max(1,Za("rvcl")));w.setMonth(M);y(Ic,["rxVisitor",k])}Ga("rxVisitor",k,w,Oa("ssc"))}function ce(){return Nf}function Xd(k){var w=ba("rxVisitor");O("rxVisitor");R("rxVisitor");Nc("rxVisitor");ka("pVO",!0);we(w);k&&y(Ic,["dt-pVO","1"]);Fb()}function Hd(){Nc("dt-pVO");Oa("pVO")&&(ka("pVO",!1),od());R("rxVisitor");Fb()}function xf(k,w,M,A,Ta){var xb=document.createElement("script");xb.setAttribute("src",k);w&&xb.setAttribute("defer",
+"defer");M&&(xb.onload=M);A&&(xb.onerror=A);Ta&&xb.setAttribute("id",Ta);xb.setAttribute("crossorigin","anonymous");k=document.getElementsByTagName("script")[0];k.parentElement.insertBefore(xb,k)}function Of(k,w){return Ff+"/"+(w||Ug)+"_"+k+"_"+(Za("buildNumber")||Bb.dT_.version)+".js"}function Dg(){var k,w;try{null===(w=null===(k=Bb.MobileAgent)||void 0===k?void 0:k.incrementActionCount)||void 0===w?void 0:w.call(k)}catch(M){}}function jh(){var k,w=Bb.dT_;Bb.dT_=(k={},k.di=0,k.version="10243220606153550",
+k.cfg=w?w.cfg:"",k.iCE=w?Va:function(){return navigator.cookieEnabled},k.ica=1,k.disabled=!1,k.overloadPrevention=!1,k.gAST=pc,k.ww=oc,k.stu=Na,k.nw=Kc,k.apush=C,k.st=gd,k.si=Db,k.aBPSL=Ca,k.rBPSL=Ra,k.gBPSL=Sa,k.aBPSCC=rb,k.gBPSCC=wb,k.buildType="dynatrace",k.gSSV=oa,k.sSSV=x,k.rSSV=R,k.rvl=Nc,k.pn=U,k.iVSC=Wa,k.p3SC=Oc,k.io=ra,k.dC=O,k.sC=Ga,k.esc=H,k.gSId=ac,k.gDtc=rc,k.gSC=Eb,k.sSC=Lb,k.gC=db,k.cRN=Se,k.cRS=Qd,k.gEL=L,k.gEBTN=eb,k.cfgO=Zb,k.pCfg=Ha,k.pCSAA=vb,k.cFHFAU=Cb,k.sCD=Qb,k.bcv=Oa,k.ncv=
+Za,k.scv=I,k.stcv=ka,k.rplC=Ba,k.cLSCK=yb,k.gFId=ke,k.gBAU=Of,k.iS=xf,k.eWE=ad,k.oEIE=dc,k.oEIEWA=y,k.eA=Lc,k.dA=jd,k.iNV=ce,k.gVID=od,k.dPV=Xd,k.ePV=Hd,k.sVIdUP=Te,k.sVTT=Ec,k.sVID=ve,k.rVID=zd,k.gVI=ye,k.gNVIdN=u,k.gARnVF=ld,k.cAUV=fd,k.uVT=ze,k.aNVL=ha,k.gPC=Rd,k.cPC=Xe,k.sPC=Bd,k.clB=Ac,k.ct=ma,k.aRI=jb,k.iXB=Ab,k.gXBR=nb,k.sXBR=lb,k.de=Q,k.cCL=La,k.iEC=Dg,k.rnw=ab,k.gto=za,k.ael=la,k.rel=ua,k.sup=Ka,k.cuel=Hb,k.iAEPOO=t,k.iSM=mc,k.aIOf=ia,k.gxwp=V,k.iIO=W,k.prm=ja,k.cI=Yb,k.gidi=ed,k.iDCV=q,
+k.gCF=ba,k.gPSMB=D,k.lvl=hd,k)}function pf(){ad(function(){if(!rc()){var k=-1*Se(2,99),w=Qd(cd);Lb("v_4_srv_".concat(String(k).replace("-","-2D"),"_sn_").concat(w))}})}var Vf="undefined"!==typeof window?window:self,Bb="undefined"!==typeof window?window:self,tg,J,B=setTimeout;na.prototype["catch"]=function(k){return this.then(null,k)};na.prototype.then=function(k,w){var M=new this.constructor(Z);ta(this,new S(k,w,M));return M};na.prototype["finally"]=function(k){var w=this.constructor;return this.then(function(M){return w.resolve(k()).then(function(){return M})},
+function(M){return w.resolve(k()).then(function(){return w.reject(M)})})};na.all=function(k){return new na(function(w,M){function A(uc,qc){try{if(qc&&("object"===typeof qc||"function"===typeof qc)){var ud=qc.then;if("function"===typeof ud){ud.call(qc,function(We){A(uc,We)},M);return}}Ta[uc]=qc;0===--xb&&w(Ta)}catch(We){M(We)}}if(!k||"undefined"===typeof k.length)return M(new TypeError("Promise.all accepts an array"));var Ta=Array.prototype.slice.call(k);if(0===Ta.length)return w([]);for(var xb=Ta.length,
+ec=0;ec<Ta.length;ec++)A(ec,Ta[ec])})};na.allSettled=function(k){return new this(function(w,M){function A(ec,uc){if(uc&&("object"===typeof uc||"function"===typeof uc)){var qc=uc.then;if("function"===typeof qc){qc.call(uc,function(ud){A(ec,ud)},function(ud){Ta[ec]={status:"rejected",reason:ud};0===--xb&&w(Ta)});return}}Ta[ec]={status:"fulfilled",value:uc};0===--xb&&w(Ta)}if(!k||"undefined"===typeof k.length)return M(new TypeError(typeof k+" "+k+" is not iterable(cannot read property Symbol(Symbol.iterator))"));
+var Ta=Array.prototype.slice.call(k);if(0===Ta.length)return w([]);var xb=Ta.length;for(M=0;M<Ta.length;M++)A(M,Ta[M])})};na.resolve=function(k){return k&&"object"===typeof k&&k.constructor===na?k:new na(function(w){w(k)})};na.reject=function(k){return new na(function(w,M){M(k)})};na.race=function(k){return new na(function(w,M){if(!k||"undefined"===typeof k.length)return M(new TypeError("Promise.race accepts an array"));for(var A=0,Ta=k.length;A<Ta;A++)na.resolve(k[A]).then(w,M)})};na.Jb="function"===
+typeof setImmediate&&function(k){setImmediate(k)}||function(k){B(k,0)};na.Qc=function(k){"undefined"!==typeof console&&console&&console.warn("Possible Unhandled Promise Rejection:",k)};var K=na,Fa={"!":"%21","~":"%7E","*":"%2A","(":"%28",")":"%29","'":"%27",$:"%24",";":"%3B",",":"%2C"},Ya,tb,Sb,Ub,Pb=Bb.attachEvent,cc=Bb.Worker,lc=cc&&cc.prototype.addEventListener,$c=[],Vd=["touchstart","touchend","scroll"],yd,dd,ie="abort getAllResponseHeaders getResponseHeader open overrideMimeType send setRequestHeader".split(" "),
+Kd,Ne,Yc,Ce,ig=(Ce={},Ce.l="Lax",Ce.s="Strict",Ce.n="None",Ce),xc={},Ld,Oe=!1,cd=32,je=Bb.Worker,Wd=Bb.Blob,jg=Bb.URL&&Bb.URL.createObjectURL,Fe,Ge,Ee,mi,kg=!1,tf,Wf=[],me=[],Jd,lg,Bg={},Vc,Cf=[],nf=[],ih=[],Rg,Eg,of,Tg=6E8,Xf=[],Sg=[],Cg=!1,ni=/([A-Z]+)-([0-9]+)/,Yf=[],Df,Mf,Ef=!1,wd,Nf=!1,Ye,Ff,Ug;(function(k){var w,M;k=k||0>(null===(w=navigator.userAgent)||void 0===w?void 0:w.indexOf("RuxitSynthetic"));if(!Bb.dT_||!Bb.dT_.cfg||"string"!==typeof Bb.dT_.cfg||"initialized"in Bb.dT_&&Bb.dT_.initialized)null===
+(M=Bb.console)||void 0===M?void 0:M.log("InitConfig not found or agent already initialized! This is an injection issue."),Bb.dT_&&(Bb.dT_.di=3);else if(k)try{jh();var A;Yc=(A={},A.ade="",A.aew=!0,A.apn="",A.agentLocation="",A.agentUri="",A.app="",A.async=!1,A.ase=!1,A.auto=!1,A.bp1=!1,A.bp2=!1,A.bp=1,A.bisaoi=!1,A.bisCmE="",A.bs=!1,A.buildNumber=0,A.csprv=!0,A.cepl=16E3,A.cls=!0,A.ccNcss=!1,A.cg=!1,A.coo=!1,A.cooO=!1,A.cssm="0",A.cwt="",A.cwtUrl="27pd8x1igg",A.cors=!1,A.csu="",A.cuc="",A.cce=!1,A.cux=
+!1,A.dataDtConfig="",A.debugName="",A.dvl=500,A.dASXH=!1,A.disableCookieManager=!1,A.disableLogging=!1,A.dmo=!1,A.doel=!1,A.dpch=!1,A.dpvc=!1,A.disableXhrFailures=!1,A.domain="",A.domainOverride="",A.domainOriginal="",A.doNotDetect="",A.ds=!0,A.dsndb=!1,A.dsa=!1,A.dsss=!1,A.dssv=!0,A.earxa=!0,A.exp=!1,A.eni=!0,A.erjdw=!0,A.expw=!1,A.instr="",A.evl="",A.extblacklist="",A.euf=!1,A.fau=!0,A.fa=!1,A.fvdi=!1,A.featureHash="",A.hvt=216E5,A.ffi=!1,A.imm=!1,A.ign="",A.iub="",A.iqvn=!1,A.initializedModules=
+"",A.lastModification=0,A.lupr=!0,A.lab=!1,A.legacy=!1,A.lt=!0,A.mb="",A.md="",A.mdp="",A.mdl="",A.mcepsl=100,A.mdn=5E3,A.mhl=4E3,A.mpl=1024,A.mmds=2E4,A.msl=3E4,A.bismepl=2E3,A.mel=200,A.mepp=10,A.moa=30,A.mrt=3,A.ntd=!1,A.ncw=!1,A.oat=180,A.ote=!1,A.owasp=!1,A.pcl=20,A.pt=!0,A.perfbv=1,A.prfSmpl=0,A.pVO=!1,A.peti=!1,A.raxeh=!0,A.rdnt=0,A.nosr=!0,A.reportUrl="dynaTraceMonitor",A.rid="",A.ridPath="",A.rpid="",A.rcdec=12096E5,A.rtl=0,A.rtp=2,A.rtt=1E3,A.rtu=200,A.restoreTimeline=!1,A.rvcl=24,A.sl=
+100,A.ssc=!1,A.svNB=!1,A.srad=!0,A.srbbv=1,A.srbw=!0,A.srmr=100,A.srms="1,1,,,",A.srsr=1E5,A.srtbv=3,A.srtd=1,A.srtr=500,A.srvr="",A.srvi=0,A.srwo=!1,A.srre="",A.srxcss=!0,A.srxicss=!0,A.srif=!1,A.srmrc=!1,A.srsdom=!1,A.srcss=!0,A.srmcrl=1,A.srmcrv=10,A.ssv=4,A.st=3E3,A.spc="",A.syntheticConfig=!1,A.tal=0,A.tp="500,50,3",A.tt=100,A.tvc=3E3,A.exteventsoff=!1,A.uxdce=!1,A.uxdcw=1500,A.uxrgce=!0,A.uxrgcm="100,25,300,3;100,25,300,3",A.uam=!1,A.uana="data-dtname,data-dtName",A.uanpi=0,A.pui=!1,A.usrvd=
+!0,A.vrt=!1,A.vcfi=!0,A.vcit=1E3,A.vct=50,A.vcx=50,A.vscl=0,A.vncm=1,A.xb="",A.chw="",A.xt=0,A.xhb="",A);var Ta;ja();var xb;yd=Bb.XMLHttpRequest;dd=Bb.ActiveXObject;var ec=null===(xb=Bb.XMLHttpRequest)||void 0===xb?void 0:xb.prototype;if(ec)for(Kd={},w=0,M=ie;w<M.length;w++){var uc=M[w];void 0!==ec[uc]&&(Kd[uc]=ec[uc])}Ya=Bb.addEventListener;tb=Bb.removeEventListener;Sb=Bb.document.addEventListener;Ub=Bb.document.removeEventListener;Ee=Bb.setTimeout;mi=Bb.setInterval;kg||(Fe=Bb.clearTimeout,Ge=Bb.clearInterval);
+var qc=Va?Va():navigator.cookieEnabled,ud=1===Oc(ba("dtAdkSettings")||(null===(Ta=lg)||void 0===Ta?void 0:Ta.getItem("dtAdkSettings"))||"").overloadState;La();if(!(!qc||ud?0:"complete"!==document.readyState||Bb.performance&&Bb.performance.timing))throw Error("Error during initCode initialization");try{lg=Bb.localStorage}catch(Xb){}$b();Jd=Vc();tf=[];me=[];Bg={};if(!kg){Bb.clearTimeout=Sc(Fe);Bb.clearInterval=Sc(Ge);kg=!0;try{Ld=Bb.sessionStorage}catch(Xb){}}var We=Math.random(),Ei=Math.random();Eg=
+0!==We&&0!==Ei&&We!==Ei;if(-1!==ra(navigator.userAgent,"Googlebot")){var Ie=performance.getEntriesByType("navigation")[0];Ta=1;if(Ie){for(var Gf in Ie){var bf=Ie[Gf];"number"===typeof bf&&bf&&(Ta=1===Ta?bf:Ta+bf)}var kf=Math.floor(1E4*Ta)}else kf=Ta;Rg=af(kf)}else Eg?Rg=Math.random:Rg=af(Vc());of=Jd%Tg+"_"+U(Se(0,1E3)+"");a:{var Je=Bb.dT_.cfg;xc={reportUrl:"dynaTraceMonitor",initializedModules:"",csu:"dtagent",dataDtConfig:"string"===typeof Je?Je:""};Bb.dT_.cfg=xc;xc.csu="ruxitagentjs";var Ed=xc.dataDtConfig;
+Ed&&-1===ra(Ed,"#CONFIGSTRING")&&(vb(Ed,xc),$a("domain"),$a("auto"),$a("app"),Cb(xc));var mg=eb("script"),kh=L(mg),Fd=-1===ra(xc.dataDtConfig||"","#CONFIGSTRING")?xc:null;if(0<kh)for(kf=0;kf<kh;kf++)b:{Ie=void 0;var lh=mg[kf];Gf=Fd;if(lh.attributes){var Sd=xc.csu+"_bootstrap.js";bf=/.*\/jstag\/.*\/.*\/(.*)_bs(_dbg)?.js$/;Je=Gf;var Bc=lh.src,qe=null===Bc||void 0===Bc?void 0:Bc.indexOf(Sd),fj=lh.attributes.getNamedItem("data-dtconfig");if(fj){Ed=void 0;Ta=Bc;var Zf=fj.value;ec={};xc.legacy="1";uc=/([a-zA-Z]*)_([a-zA-Z_0-9]*)_([0-9]+)/g;
+Ta&&(Ed=uc.exec(Ta),null===Ed||void 0===Ed?0:Ed.length)&&(ec.csu=Ed[1],ec.featureHash=Ed[2],ec.agentLocation=Ta.substring(0,ra(Ta,Ed[1])-1),ec.buildNumber=Ed[3]);if(Zf){vb(Zf,ec,!0);var Fi=ec.agentUri;!Ta&&Fi&&(Ed=uc.exec(Fi),null===Ed||void 0===Ed?0:Ed.length)&&(ec.csu=Ed[1])}bd(ec);Ie=ec;if(!Gf)Je=Ie;else if(!Ie.syntheticConfig){Fd=Ie;break b}}Ie||(Ie=xc);if(0<qe){var Gi=qe+Sd.length+5;Ie.app=Bc.length>Gi?Bc.substring(Gi):"Default%20Application"}else if(Bc){var oi=bf.exec(Bc);oi&&(Ie.app=oi[1])}Fd=
+Je}else Fd=Gf}if(Fd)for(var Cc in Fd)Object.prototype.hasOwnProperty.call(Fd,Cc)&&(mg=Cc,xc[mg]=Fd[mg]);var sc=yb();try{var uf=(Fd=lg)&&Fd.getItem(sc);if(uf){var Ae=Ha(uf),Md=vb(Ae.config||""),cf=xc.lastModification||"0",df=U((Md.lastModification||Ae.lastModification||"0").substring(0,13)),ug="string"===typeof cf?U(cf.substring(0,13)):cf;if(!cf||df>=ug)if(Md.csu=Ae.name||I("csu"),Md.featureHash=Ae.featureHash||I("featureHash"),Md.agentUri&&Cb(Md),Qb(Md,!0),Ab(Md),jb(Md),df>(xc.lastModification||0)){var Td=
+Oa("auto"),gj=Oa("legacy");xc=Ba(Md);xc.auto=Td?"1":"0";xc.legacy=gj?"1":"0"}}}catch(Xb){}Qb(xc);try{var Hi=xc.ign;if(Hi&&(new RegExp(Hi)).test(Bb.location.href)){document.dT_=Bb.dT_=void 0;var re=!1;break a}}catch(Xb){}if(mc()){var pi=navigator.userAgent,Yd=pi.lastIndexOf("RuxitSynthetic");if(-1===Yd)var $f={};else{var qf=pi.substring(Yd+14);if(-1===ra(qf," c"))$f={};else{sc={};uf=0;for(var rf=qf.split(" ");uf<rf.length;uf++){var ag=rf[uf];if("c"===ag.charAt(0)){var yf=ag.substring(1),Ch=yf.indexOf("="),
+Pe=yf.substring(0,Ch),Oh=yf.substring(Ch+1);Pe&&Oh&&(sc[Pe]=Oh)}}$f=sc}}qf=void 0;for(qf in $f)Object.prototype.hasOwnProperty.call($f,qf)&&$f[qf]&&(xc[qf]=$f[qf]);Ba(xc)}re=!0}if(!re)throw Error("Error during config initialization");Pd();try{Ye=Bb.dT_.disabled||!!oa("dtDisabled")}catch(Xb){}var Fg;if(!(Fg=I("agentLocation")))a:{var Vg=I("agentUri");if(Vg||document.currentScript){var F=Vg||document.currentScript.src;if(F){re=F;var P=-1===ra(re,"_bs")&&-1===ra(re,"_bootstrap")&&-1===ra(re,"_complete")?
+1:2,da=F.lastIndexOf("/");for(re=0;re<P&&-1!==da;re++)F=F.substring(0,da),da=F.lastIndexOf("/");Fg=F;break a}}var xa=location.pathname;Fg=xa.substring(0,xa.lastIndexOf("/"))}Ff=Fg;Ug=I("csu")||"ruxitagentjs";"true"===ba("dtUseDebugAgent")&&0>Ug.indexOf("dbg")&&(Ug=I("debugName")||Ug+"dbg");if(!Oa("auto")&&!Oa("legacy")&&!Ye){var Qa=I("agentUri")||Of(I("featureHash")),hb;if(!(hb=Oa("async")||"complete"===document.readyState)){var Gb=Bb.navigator.userAgent,Jb=Gb.indexOf("MSIE ");hb=0<Jb?9>=parseInt(Gb.substring(Jb+
+5,Gb.indexOf(".",Jb)),10):!1}if(hb)xf(Qa,Oa("async"),void 0,void 0,"dtjsagent");else{var Rb="".concat("dtjsagent","dw");document.write('<script id="'.concat(Rb,'" type="text/javascript" src="').concat(Qa,'">\x3c/script>'));document.getElementById(Rb)||xf(Qa,Oa("async"),void 0,void 0,"dtjsagent")}}ba("dtCookie")&&ka("cooO",!0);pf();ka("pVO",!!hd("dt-pVO"));ad(od);Df=18E5;Mf=Za("hvt")||216E5;y(Xe,[1]);Sg=[];Xf="dtCookie dtLatC rxvt dtAdk dtAdkSettings dtPC".split(" ");if(Oa("cg"))try{Wc(Object.getOwnPropertyDescriptor(Document.prototype,
+"cookie")||Object.getOwnPropertyDescriptor(HTMLDocument.prototype,"cookie"))}catch(Xb){}}catch(Xb){try{delete Bb.dT_}catch(Dc){Bb.dT_=void 0}La()&&Bb.console.log("JsAgent initCode initialization failed!",Xb)}})(!1)})()})();
+  </script>
+  <script defer="defer" src="/ruxitagentjs_A2Vfhjqru_10243220606153550.js" type="text/javascript">
+  </script>
+  <script async="" defer="" id="addOneTrustScriptId" src="https://static.gartner.com/assets/js/cookieBanner.js" type="text/javascript">
+  </script>
+  <link href="https://reviews.static.gartner.com" rel="preconnect dns-prefetch"/>
+  <script type="text/javascript">
+   var pageReadyEventName = 'ReviewDisplayPage';
+		var startTime = new Date();
+		var readyListener = function(e) {
+			let origin = e.origin || e.originalEvent.origin;
+			// if this is not coming from a gartner.com domain then do not process.
+			if (origin && origin.indexOf('gartner.com') === -1) {
+				return;
+			}
+			if (e.data && e.data.key === pageReadyEventName) {
+				window.removeEventListener('message', readyListener, false);
+				var timePassed = new Date() - startTime;
+				// log if ga is ready and we are in Production
+				if (window && window.dataLayer && (window.location.host.indexOf('www.gartner.com') != -1)) {
+					window.dataLayer.push({
+						'event':'gaEvent',
+						'gaEventCategory':'PITiming',
+						'gaEventAction':pageReadyEventName,
+						'gaEventValue': timePassed,  // must be a number!!!
+						'gaEventLabel': 'na',
+						'gaEventNonInteraction':true
+					});
+				}
+				// for ease of use also log to the console:
+				if (!!window.console && !!window.console.log) {
+					window.console.log('Timing to ready for ', pageReadyEventName, ' is ', timePassed);
+				}
+			}
+		}
+		window.addEventListener('message', readyListener, false);
+  </script>
+  <title id="head-title">
+   Zoho Creator review in Rapid Mobile App Development (RMAD) Tools
+  </title>
+  <meta content="Read this verified review Zoho Creator Rapid Mobile App Development (RMAD) Tools from the IT community." id="head-meta" name="description"/>
+  <meta content="Gartner, Inc." name="author"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="noindex, follow" name="robots"/>
+  <link href="https://plus.google.com/+gartner" rel="publisher"/>
+  <link href="/imagesrv/apps/peerinsights/images/favicon.ico?v=1" rel="icon" type="image/ico"/>
+  <link href="https://www.gartner.com/reviews/market/rapid-mobile-app-development-tools/vendor/zoho/product/zoho-creator/review/view/1130330" id="head-link" rel="canonical"/>
+  <link href="https://reviews.static.gartner.com" rel="preconnect dns-prefetch"/>
+  <link href="https://reviews.static.gartner.com/static-nextjs/css_min/inline.min.1666997684728.css" rel="stylesheet" type="text/css"/>
+  <link href="https://reviews.static.gartner.com/static-nextjs/css_min/bootstrap-3.3.7.min.1666997684728.css" rel="stylesheet" type="text/css"/>
+  <link href="https://reviews.static.gartner.com/static-nextjs/css_min/reactTemplate.min.1666997684728.css" rel="stylesheet" type="text/css"/>
+  <link href="//fonts.googleapis.com/css?family=Material+Icons+Outlined" media="all" rel="stylesheet" type="text/css"/>
+  <link href="https://reviews.static.gartner.com/static-nextjs/css_min/UXDMasterStyleSheet.min.1666997684728.css" rel="stylesheet" type="text/css"/>
+  <link href="https://reviews.static.gartner.com/static-nextjs/css_min/piUserMaster.min.1666997684728.css" rel="stylesheet" type="text/css"/>
+  <meta content="Zoho Creator review in Rapid Mobile App Development (RMAD) Tools" id="head-og-title" property="og:title"/>
+  <meta content="Read this verified review Zoho Creator Rapid Mobile App Development (RMAD) Tools from the IT community." id="head-og-description" property="og:description"/>
+  <meta content="https://www.gartner.com/market/rapid-mobile-app-development-tools/vendor/zoho/product/zoho-creator/review/view/1130330" property="og:url"/>
+  <meta content="http://www.gartner.com/imagesrv/apps/peerinsights/images/gpi-twitter-img-fa.png" property="og:image"/>
+  <meta content="website" property="og:type"/>
+  <meta content="en_us" property="og:locale"/>
+  <meta content="Gartner" property="og:site_name"/>
+  <meta content="Read this verified review Zoho Creator Rapid Mobile App Development (RMAD) Tools from the IT community." id="head-twitter-description" name="twitter:description"/>
+  <meta content="http://www.gartner.com/imagesrv/apps/peerinsights/images/gpi-twitter-img-fa.png" name="twitter:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@Gartner_Inc" name="twitter:creator"/>
+  <meta content="@Gartner_Inc" name="twitter:site"/>
+  <script type="text/javascript">
+   if (typeof window != "undefined") {
+		var script = document.createElement("script");
+		script.async = 1;
+		script.defer = 1;
+		script.type = "text/javascript";
+		script.src = "https://www.recaptcha.net/recaptcha/api.js?render=6Lc8z9YUAAAAAPs8cWSmTBHNs7N2n8ruye0fJiL4";
+		var head = document.getElementsByTagName("head");
+		head = head ? head[0] : null;
+		if (head) {
+			head.appendChild(script);
+		}
+	}
+  </script>
+  <script type="text/javascript">
+   window.recaptchaV3SiteKey = '6Lc8z9YUAAAAAPs8cWSmTBHNs7N2n8ruye0fJiL4';
+			window.botRequest = false;
+			window.enableDelayedScripts = true;
+			window.nextJS = true;
+			window.isLoggedIn = false;
+			window.isDev = false;
+			window.generatingPDF = false; 
+			window.adminUrl = 'https://reviews.admin.gartner.com/pi/admin'; 
+			window.model = {showLinkedinLogin : true};
+  </script>
+  <script type="text/javascript">
+   window.flagsAndPermissions = {"ReferTabSocialInviteShowFlag":true,"vendor-pledge":true,"disable-paste-in-survey":true,"partner-coi-prompt":true,"MC-Incentives-On":false,"likes-dislikes-content":true,"content-tagging-feature-flag":true,"vp-search-delay":false,"unified-profile":true,"alternatives-page-new":true,"disallow_registration_without_token":true,"vendor-profile-project":true,"partner-reviews-flag":true,"listing-guidelines":true,"pi-plus-resource-center":true,"process-vendor-product-profile-request":true,"vendor-engagement-intercom-flag":true,"alternative-page-feature-flag":true,"ReferTabResendInviteShowFlag":true,"vendor-compare-feature-flag":true,"pi-readership-analytics":true,"cc-winners-page":false,"pi-discovery-pro":true,"es-mvp-search":true,"Promo-Incentives-On":true,"ReferTabEmailInviteShowFlag":true,"new-vendor-product-landing-page":true};
+  </script>
+  <script type="text/javascript">
+   window.BASE_URL = '/reviews/api-proxy';
+	window.ACCESS_TOKEN_DOMAIN = '/reviews/auth-proxy';
+	window.REVIEWS_API_HOST = '/reviews/api2-proxy';
+	window.CDN_URL = 'https://reviews.static.gartner.com';
+
+	// send the refval up for any page.  Do this as soon as possible so that other end points will see this latest value.
+	if ('') {
+		var url = '/reviews/api-proxy/reviews/identify/reference?refval=';
+		window.sessionStorage.setItem("client-side-refval", '');
+		var campaignExpiryKey = "campaign-expiry-date";
+
+		if ('') {
+			// If there is a new date, set it to session or replace existing date.
+			window.sessionStorage.setItem(campaignExpiryKey, '');
+		} else {
+			// If there is no new date, remove existing date.
+			window.sessionStorage.removeItem(campaignExpiryKey);
+		}
+
+		if('') {
+			url = url + '&refuser=';
+			window.sessionStorage.setItem("client-side-refuser", '');
+		}
+		if('') {
+			url = url + '&channel=';
+		}
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', url);
+		xhr.withCredentials = true;
+		xhr.send();
+	}
+
+	if (typeof initTime === 'undefined') {
+		var initTime = Date.now();
+	}
+  </script>
+  <script type="text/javascript">
+   var precalledEndPoints = {};
+  </script>
+  <script id="hot-jar-insert" type="text/javascript">
+  </script>
+  <script id="process-jwt" type="text/javascript">
+   (function () {
+			var pulseQA = localStorage.getItem('PULSE_QA');
+			var PROCESS_JWT_MAX_ATTEMP = sessionStorage.getItem('PROCESS_JWT_MAX_ATTEMP') || 0;
+			if (!!pulseQA) {
+			  var pulseQA = JSON.parse(pulseQA);
+			  if (typeof pulseQA['userState'] != 'undefined') {
+				if (typeof pulseQA['userState']['token'] != 'undefined') {
+				  async function processJwt() {
+					var resp = await fetch("https://external.gcom.pdo.aws.gartner.com/account/authenticate/process/jwt", {
+					  headers: {
+						'Content-Type': 'application/json'
+					  },
+						credentials: 'include',
+					  method: 'POST',
+					  body: JSON.stringify({
+						token: pulseQA['userState']['token'],
+					  })
+					}).then(response => {
+					  if (response.status == 200) {
+							return true;
+						} else {
+							return false;
+						}
+					})
+
+					return resp;
+				  }
+
+				  if (PROCESS_JWT_MAX_ATTEMP < 3) {
+						sessionStorage.setItem('PROCESS_JWT_MAX_ATTEMP', parseInt(PROCESS_JWT_MAX_ATTEMP) + 1);
+						const response = processJwt().then((resp) => {
+							if (resp) {
+								location.reload();
+							}
+						});
+					}
+				}
+			  }
+			}
+		  })()
+  </script>
+  <meta content="38" name="next-head-count"/>
+  <link as="style" href="https://reviews.static.gartner.com/_next/static/css/5973f84890c34a57d115.css" rel="preload"/>
+  <link data-n-p="" href="https://reviews.static.gartner.com/_next/static/css/5973f84890c34a57d115.css" rel="stylesheet"/>
+  <noscript data-n-css="">
+  </noscript>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/framework.d774fe4d0a07d44ca52c.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/9994b0eecffbe44547c9c1d5b124e4d66550f1ad.6d4cdf53ef7b4cfb4b62.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/2e4aca677658372d3ab1e7160d642e9bf8e08f09.8fabbb116b16c6a4ee8b.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/main-d7c9e1b3e5231b97d1f4.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/b637e9a5.df4388f5cd062a268648.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/75fc9c18.c5f381fba2b0f9a9f346.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/42e52869ddbc5c600a7a7721c9235b85ca3e5b13.35863f4907f6361f435a.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/386218a4e99e04b3a9a40589bed6ee9e5f9bbebb.ff6936c8033525ce067e.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/pages/_app-1e25a5074d2f12476f78.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/af0296c323f6a060a9de85a619d2576e57fbd107.38afbea8e13b65973d8f.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/a3fa968063bb35b01d4d9940f264d94b42a98360.8c90bd4db8be57765795.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/2709300db6e4c8f8ee0045c71505ecd4ca3874a7.91cbf5de0c2ebdf00e73.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/12ad142e172cc31f25587066fd7581efa6831d7a.6d166a9dd02e5628385a.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/cfdf78f8ef47b3caa42901c04b7866186738505f.a897f0fbafe0a1e46e11.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/4ddff16fe74e6e4d730d263c9f49c30c134e13fb.5cdfb006943f83c07d87.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/e638452325d6388dd69ba5b0145b3fc670e28c4a.6c0d12dfa1835a4a545d.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/d558889d9a57bacc720447f0bbd44388f5ce2deb_CSS.08230c7570daf1d4025b.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/81d30e9d48215c604b211896b6a97a2e8c6b9cd6.6401448eb02c781b79bb.js" rel="preload"/>
+  <link as="script" href="https://reviews.static.gartner.com/_next/static/chunks/pages/market/%5BmarketSeoName%5D/vendor/%5BvendorSeoName%5D/product/%5BproductSeoName%5D/review/view/%5BreviewId%5D-6f2c2e360878699dce04.js" rel="preload"/>
+ </head>
+ <body>
+  <div id="__next">
+   <div class="unification-wrapper">
+    <div class="ReviewDisplayCSS_reviewDisplayModuleCSS__KfMX9">
+     <div class="page-specific-css unification-wrapper">
+      <div class="review-display-page">
+       <div id="page-container">
+        <div class="stretch-universal-header-container">
+         <div class="unification-header sc-ifAKCX eKYsGv unification-header" id="universal-header" style="display:none">
+          <div class="universal-unification-wrapper external-header">
+           <div data-active="Community" data-headertype="main" data-showsubheader="false" id="pi-unification-header-main">
+            <div style="display:flex;justify-content:center">
+             <nav class="universal-navbar">
+              <div>
+               <div class="sc-bxivhb hLnDPH">
+                <div class="hamburger-block">
+                 <button>
+                  <svg fill="none" height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+                   <g clip-path="url(#clip0_1204_31950)">
+                    <path d="M5 30H35V26.6667H5V30ZM5 21.6667H35V18.3333H5V21.6667ZM5 10V13.3333H35V10H5Z" fill="#002856">
+                    </path>
+                   </g>
+                   <defs>
+                    <clippath id="clip0_1204_31950">
+                     <rect fill="white" height="40" width="40">
+                     </rect>
+                    </clippath>
+                   </defs>
+                  </svg>
+                 </button>
+                 <div class="modal-mask">
+                 </div>
+                 <ul class="dropdown-links drawer-links closed">
+                  <div class="drawer-header">
+                   <a href="/peer-insights">
+                    <svg fill="none" height="44" viewbox="0 0 127 44" width="127" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_1204_31953)">
+                      <path d="M59.467 4.41113L59.2995 6.47712H58.4619C57.1218 6.47712 56.4238 7.56595 56.4238 8.59895V13.2614H54.0508V4.41113H56.3122L56.368 5.52788C56.8426 4.77408 57.6802 4.41113 58.6853 4.41113H59.467Z" fill="#002856">
+                      </path>
+                      <path d="M42.9112 13.2334H40.5101V8.57099C40.5101 7.59384 40.4264 6.36541 39.0584 6.36541C37.7462 6.36541 37.2157 7.31465 37.2157 8.4314V13.2334H34.8147V4.41109H37.0203L37.0761 5.52785C37.5508 4.77404 38.4442 4.18774 39.7284 4.18774C42.1294 4.18774 42.8832 5.91871 42.8832 7.70551V13.2334H42.9112Z" fill="#002856">
+                      </path>
+                      <path d="M33.7817 11.1675L33.6142 13.1776C33.0279 13.3451 32.5254 13.3731 31.9112 13.3731C29.6497 13.3731 29.0076 12.3401 29.0076 10.2741V1.89844H31.4086V4.38321H33.7817L33.6142 6.4492H31.4086V10.1066C31.4086 10.9441 31.632 11.3908 32.4975 11.3908C32.8604 11.3908 33.2792 11.3629 33.7817 11.1675Z" fill="#002856">
+                      </path>
+                      <path d="M28.2259 4.41113L28.0305 6.47712H27.3883C26.0482 6.47712 25.3782 7.56595 25.3782 8.59895V13.2614H22.9772V4.41113H25.2386L25.2944 5.52788C25.769 4.77408 26.6066 4.41113 27.6396 4.41113H28.2259Z" fill="#002856">
+                      </path>
+                      <path d="M12.2005 12.2563C10.5812 13.1218 8.96193 13.6243 6.81218 13.5685C2.87563 13.4568 0.027916 10.9999 0.027916 6.84005C0.027916 2.68015 2.90355 0.0557857 6.8401 -5.18998e-05C8.82233 -0.0558895 10.6091 0.474567 12.0051 1.70299L10.3299 3.40604C9.46446 2.65223 8.20812 2.23345 6.67259 2.28929C4.21573 2.40096 2.70812 4.21568 2.6802 6.70046C2.65228 9.38066 4.29949 11.2233 6.86802 11.3071C8.06852 11.335 8.93401 11.1675 9.68781 10.8324V8.09639H7.00761L7.17512 5.83497H12.2005V12.2563Z" fill="#002856">
+                      </path>
+                      <path d="M50.5609 7.81722C50.4771 6.70047 49.6396 6.0025 48.4949 6.03042C47.3223 6.08626 46.5685 6.84006 46.401 7.81722H50.5609ZM52.934 9.65986H46.3731C46.5685 10.7766 47.4619 11.4746 48.5508 11.5025C49.6396 11.5304 50.2259 11.1954 51.0076 10.4137L52.5711 11.6142C51.4543 12.9822 50.1421 13.4847 48.6066 13.4847C45.9543 13.4847 43.9442 11.6142 43.9442 8.85022C43.9442 6.08626 45.9264 4.2157 48.4949 4.2157C51.3426 4.2157 52.8782 5.94666 52.8782 8.98981V9.65986H52.934Z" fill="#002856">
+                      </path>
+                      <path d="M19.1802 9.38064H18.8452C17.7284 9.38064 15.7183 9.43647 15.7462 10.6091C15.7462 12.2842 19.1802 11.7537 19.1802 9.74358V9.38064ZM21.4975 7.45424V13.2334H19.4036L19.3477 12.3679C18.7056 13.1776 17.6447 13.4568 16.5838 13.4568C14.9645 13.4568 13.4289 12.6471 13.401 10.7766C13.3452 7.8451 16.6954 7.62175 18.8173 7.62175H19.236V7.538C19.236 6.56084 18.5939 6.03038 17.3934 6.03038C16.5279 6.03038 15.6624 6.36541 15.0482 6.97962L13.6802 5.58368C14.9366 4.57861 16.2208 4.18774 17.6168 4.18774C20.269 4.18774 21.4975 5.44409 21.4975 7.45424Z" fill="#002856">
+                      </path>
+                      <path d="M58.3223 12.1446V11.7258H58.6015C58.7411 11.7258 58.9086 11.7537 58.9086 11.9212C58.9086 12.1446 58.7411 12.1446 58.5736 12.1446H58.3223ZM58.3223 12.3121H58.5736L58.9365 12.8984H59.1599L58.769 12.2842C58.9645 12.2563 59.132 12.1446 59.132 11.8933C59.132 11.6141 58.9645 11.5025 58.6574 11.5025H58.1269V12.8705H58.3223V12.3121ZM58.5736 13.4009C59.2157 13.4009 59.7741 12.8984 59.7741 12.2004C59.7741 11.5304 59.2157 11.0278 58.5736 11.0278C57.9315 11.0278 57.3731 11.5304 57.3731 12.2004C57.3452 12.8984 57.9035 13.4009 58.5736 13.4009ZM57.5964 12.2283C57.5964 11.67 58.0152 11.2512 58.5736 11.2512C59.1041 11.2512 59.5508 11.67 59.5508 12.2283C59.5508 12.8146 59.132 13.2334 58.5736 13.2334C58.0152 13.2055 57.5964 12.7867 57.5964 12.2283Z" fill="#002856">
+                      </path>
+                      <path d="M10.9721 28.5609V28.6447C10.9721 31.995 8.45939 33.3071 5.44416 33.3071H2.87563V39.7285H0.977158V23.9543H5.47208C8.48731 23.9543 10.9721 25.2944 10.9721 28.5609ZM9.0736 28.6726V28.5889C9.0736 26.3554 7.7335 25.5178 5.61168 25.5178H2.90355V31.8274H5.58376C7.84518 31.7995 9.0736 30.7107 9.0736 28.6726Z" fill="#002856">
+                      </path>
+                      <path d="M11.5025 34.1167V33.9492C11.5025 30.4593 13.736 28.0304 16.9188 28.0304C19.599 28.0304 22.1117 29.6497 22.1117 33.7817V34.368H13.4289C13.5127 36.9923 14.769 38.4441 17.1421 38.4441C18.9289 38.4441 19.9619 37.7741 20.2132 36.4339H22.0558C21.665 38.7512 19.7386 39.9796 17.1142 39.9796C13.8477 39.9517 11.5025 37.6624 11.5025 34.1167ZM16.9467 29.538C15.0761 29.538 13.8198 30.8223 13.5127 32.8883H20.269C20.0736 30.4872 18.8452 29.538 16.9467 29.538Z" fill="#002856">
+                      </path>
+                      <path d="M23.731 34.1167V33.9492C23.731 30.4593 25.9645 28.0304 29.1472 28.0304C31.8274 28.0304 34.3401 29.6497 34.3401 33.7817V34.368H25.6294C25.7132 36.9923 26.9695 38.4441 29.3426 38.4441C31.1294 38.4441 32.1624 37.7741 32.4137 36.4339H34.2563C33.8655 38.7512 31.9391 39.9796 29.3147 39.9796C26.0482 39.9517 23.731 37.6624 23.731 34.1167ZM29.1472 29.538C27.2766 29.538 26.0203 30.8223 25.6853 32.8883H32.4416C32.302 30.4872 31.0457 29.538 29.1472 29.538Z" fill="#002856">
+                      </path>
+                      <path d="M38.5 30.264C39.2259 28.9518 40.231 28.0584 42.297 27.9746V29.7056C39.9797 29.8172 38.5 30.5431 38.5 33.3909V39.7284H36.6574V28.198H38.5V30.264Z" fill="#002856">
+                      </path>
+                      <path d="M50.3376 39.7564H48.4112V23.9543H50.3376V39.7564Z" fill="#40B3E1">
+                      </path>
+                      <path d="M54.8604 30.0406C55.3909 28.9518 56.6751 28.0026 58.5736 28.0026C60.9746 28.0026 62.6497 29.3147 62.6497 32.665V39.7564H60.8071V32.5254C60.8071 30.4873 59.9416 29.5939 58.099 29.5939C56.3959 29.5939 54.8604 30.6828 54.8604 32.7488V39.7564H53.0178V28.198H54.8604V30.0406Z" fill="#40B3E1">
+                      </path>
+                      <path d="M64.1294 36.2107H65.9162C66.0558 37.5787 66.7817 38.4442 68.6523 38.4442C70.3832 38.4442 71.165 37.8579 71.165 36.6015C71.165 35.3452 70.2716 34.9823 68.4568 34.6472C65.4416 34.0889 64.4365 33.2513 64.4365 31.2411C64.4365 29.0914 66.5305 28.0026 68.3452 28.0026C70.4112 28.0026 72.2259 28.8401 72.533 31.3528H70.7741C70.5228 30.0965 69.797 29.5381 68.3452 29.5381C67.0051 29.5381 66.1675 30.2081 66.1675 31.1853C66.1675 32.2183 66.7538 32.6371 68.8756 33.0279C71.2766 33.4746 72.9518 34.0051 72.9518 36.462C72.9518 38.5559 71.5279 39.9797 68.7081 39.9797C65.9162 39.9518 64.2411 38.5559 64.1294 36.2107Z" fill="#40B3E1">
+                      </path>
+                      <path d="M74.6548 24.5685C74.6548 23.8985 75.1853 23.3401 75.8832 23.3401C76.5812 23.3401 77.1117 23.8705 77.1117 24.5406C77.1117 25.2106 76.5812 25.769 75.8832 25.769C75.2132 25.769 74.6548 25.2386 74.6548 24.5685ZM76.8325 39.7563H74.9898V28.198H76.8325V39.7563Z" fill="#40B3E1">
+                      </path>
+                      <path d="M79.1218 40.4264H80.9924C81.2716 41.7665 82.3604 42.4365 84.3426 42.4365C86.604 42.4365 88.0558 41.3477 88.0558 38.8629V37.1878C87.1903 38.5279 85.7386 39.3376 84.1472 39.3655C81.104 39.3655 78.8705 37.0761 78.8705 33.8934V33.7259C78.8705 30.599 81.0761 27.9746 84.2589 27.9746C86.1853 27.9746 87.3858 28.8959 88.0279 30.0406V28.198H89.8426V38.9746C89.8147 42.3249 87.5533 43.9721 84.3147 43.9721C80.9365 44 79.4289 42.3807 79.1218 40.4264ZM88.1117 33.7817V33.6142C88.1117 31.0178 86.6878 29.5101 84.4543 29.5101C82.165 29.5101 80.7969 31.2132 80.7969 33.6421V33.8096C80.7969 36.3223 82.4162 37.8299 84.3705 37.8299C86.4924 37.8579 88.1117 36.3502 88.1117 33.7817Z" fill="#40B3E1">
+                      </path>
+                      <path d="M94.6168 30.0406C95.1472 28.9518 96.4315 28.0025 98.33 28.0025C100.703 28.0025 102.406 29.3147 102.406 32.665V39.7563H100.563V32.5254C100.563 30.4873 99.698 29.5939 97.8553 29.5939C96.1523 29.5939 94.6168 30.6827 94.6168 32.7487V39.7563H92.7741V22.67H94.6168V30.0406Z" fill="#40B3E1">
+                      </path>
+                      <path d="M105.365 36.8807V29.7614H103.718V28.198H105.365V25.5736H107.208V28.198H109.916V29.7614H107.208V36.7132C107.208 37.83 107.711 38.3883 108.632 38.3883C109.107 38.3883 109.609 38.3046 110.056 38.1371V39.6726C109.553 39.8401 109.023 39.9239 108.492 39.9239C106.371 39.9239 105.365 38.6675 105.365 36.8807Z" fill="#40B3E1">
+                      </path>
+                      <path d="M110.949 36.2107H112.736C112.876 37.5787 113.602 38.4442 115.444 38.4442C117.203 38.4442 117.957 37.8579 117.957 36.6015C117.957 35.3452 117.063 34.9823 115.249 34.6472C112.233 34.0889 111.228 33.2513 111.228 31.2411C111.228 29.0914 113.322 28.0026 115.137 28.0026C117.203 28.0026 119.018 28.8401 119.325 31.3528H117.566C117.287 30.0965 116.589 29.5381 115.137 29.5381C113.797 29.5381 112.959 30.2081 112.959 31.1853C112.959 32.2183 113.546 32.6371 115.668 33.0279C118.069 33.4746 119.744 34.0051 119.744 36.462C119.744 38.5559 118.32 39.9797 115.5 39.9797C112.708 39.9518 111.061 38.5559 110.949 36.2107Z" fill="#40B3E1">
+                      </path>
+                      <path d="M121.279 37.2716H123.373V37.6904H122.591V40.0635H122.061V37.6904H121.279V37.2716Z" fill="#002856">
+                      </path>
+                      <path d="M125.16 39.1979L125.886 37.2994H126.584V40.0913H126.053V37.9695L125.216 40.0913H125.048L124.211 37.9695V40.0913H123.736V37.2994H124.434L125.16 39.1979Z" fill="#002856">
+                      </path>
+                     </g>
+                     <defs>
+                      <clippath id="clip0_1204_31953">
+                       <rect fill="white" height="44" width="126.584">
+                       </rect>
+                      </clippath>
+                     </defs>
+                    </svg>
+                   </a>
+                   <button>
+                    <svg fill="none" height="32" viewbox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_1319_28402)">
+                      <path d="M25.3334 8.54663L23.4534 6.66663L16.0001 14.12L8.54675 6.66663L6.66675 8.54663L14.1201 16L6.66675 23.4533L8.54675 25.3333L16.0001 17.88L23.4534 25.3333L25.3334 23.4533L17.8801 16L25.3334 8.54663Z" fill="#323232">
+                      </path>
+                     </g>
+                     <defs>
+                      <clippath id="clip0_1319_28402">
+                       <rect fill="white" height="32" width="32">
+                       </rect>
+                      </clippath>
+                     </defs>
+                    </svg>
+                   </button>
+                  </div>
+                  <li>
+                   <div class="drawer-links-container">
+                    <a href="/peer-insights">
+                     HOME
+                    </a>
+                    <svg fill="none" height="17" viewbox="0 0 20 17" width="20" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M10 2.69L15 7.19V15H13V9H7V15H5V7.19L10 2.69ZM10 0L0 9H3V17H9V11H11V17H17V9H20L10 0Z" fill="#3E3E3E">
+                     </path>
+                    </svg>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="drawer-links-container">
+                    <a href="/reviews/technology-providers/company-selection">
+                     FOR VENDORS
+                    </a>
+                    <svg fill="none" height="22" viewbox="0 0 16 22" width="16" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M4.35746 5.85709H5.8146V7.32648H4.35746V5.85709ZM7.27174 7.32648H8.72889V5.85709H7.27174V7.32648ZM10.186 7.32648H11.6432V5.85709H10.186V7.32648ZM4.35746 10.2653H5.8146V8.79587H4.35746V10.2653ZM7.27174 10.2653H8.72889V8.79587H7.27174V10.2653ZM10.186 10.2653H11.6432V8.79587H10.186V10.2653ZM4.35746 13.204H5.8146V11.7346H4.35746V13.204ZM7.27174 13.204H8.72889V11.7346H7.27174V13.204ZM10.186 13.204H11.6432V11.7346H10.186V13.204ZM4.35746 16.1428H5.8146V14.6734H4.35746V16.1428ZM7.27174 16.1428H8.72889V14.6734H7.27174V16.1428ZM10.186 16.1428H11.6432V14.6734H10.186V16.1428ZM4.35746 19.0816H5.8146V17.6122H4.35746V19.0816ZM7.27174 19.0816H8.72889V17.6122H7.27174V19.0816ZM10.186 19.0816H11.6432V17.6122H10.186V19.0816ZM12.3717 2.18362V0.714233H10.9146V2.18362H0.7146V21.2857H2.17174V3.65301H13.8289V21.2857H15.286V2.18362H12.3717Z" fill="#3E3E3E">
+                     </path>
+                    </svg>
+                   </div>
+                  </li>
+                  <li>
+                   <div>
+                    <div class="drawer-links-container">
+                     <div>
+                      <p>
+                       REVIEWS
+                      </p>
+                     </div>
+                     <svg fill="none" height="12" viewbox="0 0 8 12" width="8" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.00009 0L0.590088 1.41L5.17009 6L0.590088 10.59L2.00009 12L8.00009 6L2.00009 0Z" fill="#3E3E3E">
+                      </path>
+                     </svg>
+                    </div>
+                    <div class="sc-htpNat lhdhIS">
+                     <ul class="dropdown-links drawer-links drawer-sub-menu insights-dropdownlist closed">
+                      <li class="sub-menu-title yet-another-title remove-padding">
+                       <svg fill="none" height="18" viewbox="0 0 32 32" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1177_34919)">
+                         <path d="M26.6667 14.6669H10.44L17.8933 7.21353L16 5.33353L5.33334 16.0002L16 26.6669L17.88 24.7869L10.44 17.3335H26.6667V14.6669Z" fill="#002856">
+                         </path>
+                        </g>
+                        <defs>
+                         <clippath id="clip0_1177_34919">
+                          <rect fill="white" height="32" width="32">
+                          </rect>
+                         </clippath>
+                        </defs>
+                       </svg>
+                       <p>
+                        REVIEWS
+                       </p>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container clickable">
+                        <a class="drawer-link clickable" data-interaction="write-a-review" href="/reviews/survey/vendor-product">
+                         Write a review
+                         <span class="sub-text">
+                         </span>
+                        </a>
+                       </div>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container clickable">
+                        <a class="drawer-link clickable" data-interaction="product-reviews" href="/reviews/markets">
+                         Product Reviews
+                         <span class="sub-text">
+                         </span>
+                        </a>
+                       </div>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container clickable">
+                        <a class="drawer-link clickable" data-interaction="vendor-directory" href="/reviews/vendors">
+                         Vendor Directory
+                         <span class="sub-text">
+                         </span>
+                        </a>
+                       </div>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container clickable">
+                        <a class="drawer-link clickable" data-interaction="product-reviews" href="/reviews/markets">
+                         Product Comparisons
+                         <span class="sub-text">
+                         </span>
+                        </a>
+                       </div>
+                      </li>
+                     </ul>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div>
+                    <div class="drawer-links-container">
+                     <div>
+                      <p>
+                       COMMUNITY
+                      </p>
+                     </div>
+                     <svg fill="none" height="12" viewbox="0 0 8 12" width="8" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.00009 0L0.590088 1.41L5.17009 6L0.590088 10.59L2.00009 12L8.00009 6L2.00009 0Z" fill="#3E3E3E">
+                      </path>
+                     </svg>
+                    </div>
+                    <div class="sc-htpNat lhdhIS">
+                     <ul class="dropdown-links drawer-links drawer-sub-menu community-dropdownlist closed">
+                      <li class="sub-menu-title yet-another-title remove-padding">
+                       <svg fill="none" height="18" viewbox="0 0 32 32" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1177_34919)">
+                         <path d="M26.6667 14.6669H10.44L17.8933 7.21353L16 5.33353L5.33334 16.0002L16 26.6669L17.88 24.7869L10.44 17.3335H26.6667V14.6669Z" fill="#002856">
+                         </path>
+                        </g>
+                        <defs>
+                         <clippath id="clip0_1177_34919">
+                          <rect fill="white" height="32" width="32">
+                          </rect>
+                         </clippath>
+                        </defs>
+                       </svg>
+                       <p>
+                        COMMUNITY
+                       </p>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container clickable">
+                        <a class="drawer-link clickable" data-interaction="Ambassador" href="/ambassador">
+                         Ambassador
+                         <span class="sub-text">
+                         </span>
+                        </a>
+                       </div>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container clickable">
+                        <a class="drawer-link clickable" data-interaction="benchmark-surveys" href="/peer-insights/reports/industry/unanswered">
+                         Benchmark Surveys
+                         <span class="sub-text">
+                         </span>
+                        </a>
+                       </div>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container clickable">
+                        <a class="drawer-link clickable" data-interaction="one-minute-insights" href="/peer-insights/reports/industry/oneminuteinsights">
+                         One-Minute Insights
+                         <span class="sub-text">
+                         </span>
+                        </a>
+                       </div>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container not-clickable">
+                        <p class="drawer-link not-clickable" data-interaction="Member Directory">
+                         Member Directory
+                         <span class="sub-text">
+                          COMING SOON!
+                         </span>
+                        </p>
+                       </div>
+                      </li>
+                     </ul>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div>
+                    <div class="drawer-links-container">
+                     <div>
+                      <p>
+                       EVENTS
+                      </p>
+                     </div>
+                     <svg fill="none" height="12" viewbox="0 0 8 12" width="8" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.00009 0L0.590088 1.41L5.17009 6L0.590088 10.59L2.00009 12L8.00009 6L2.00009 0Z" fill="#3E3E3E">
+                      </path>
+                     </svg>
+                    </div>
+                    <div class="sc-htpNat lhdhIS">
+                     <ul class="dropdown-links drawer-links drawer-sub-menu events-dropdownlist closed">
+                      <li class="sub-menu-title yet-another-title remove-padding">
+                       <svg fill="none" height="18" viewbox="0 0 32 32" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1177_34919)">
+                         <path d="M26.6667 14.6669H10.44L17.8933 7.21353L16 5.33353L5.33334 16.0002L16 26.6669L17.88 24.7869L10.44 17.3335H26.6667V14.6669Z" fill="#002856">
+                         </path>
+                        </g>
+                        <defs>
+                         <clippath id="clip0_1177_34919">
+                          <rect fill="white" height="32" width="32">
+                          </rect>
+                         </clippath>
+                        </defs>
+                       </svg>
+                       <p>
+                        EVENTS
+                       </p>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container clickable">
+                        <a class="drawer-link clickable" data-interaction="Evanta" href="https://www.evanta.com/">
+                         Evanta
+                         <span class="sub-text">
+                         </span>
+                        </a>
+                       </div>
+                      </li>
+                      <li>
+                       <div class="drawer-links-container clickable">
+                        <a class="drawer-link clickable" data-interaction="Conference Calendar" href="https://www.gartner.com/en/conferences/calendar">
+                         Conference Calendar
+                         <span class="sub-text">
+                         </span>
+                        </a>
+                       </div>
+                      </li>
+                     </ul>
+                    </div>
+                   </div>
+                  </li>
+                  <li>
+                   <div class="drawer-links-container">
+                    <a href="https://www.gartner.com/myhomepage">
+                     GARTNER.COM
+                    </a>
+                    <svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M16 16H2V2H9V0H2C0.89 0 0 0.9 0 2V16C0 17.1 0.89 18 2 18H16C17.1 18 18 17.1 18 16V9H16V16ZM11 0V2H14.59L4.76 11.83L6.17 13.24L16 3.41V7H18V0H11Z" fill="#3E3E3E">
+                     </path>
+                    </svg>
+                   </div>
+                  </li>
+                  <div class="drawer-footer">
+                   <div class="footer-link-wrapper">
+                    <a href="/reviews/guidelines" rel="nofollow" target="_blank">
+                     Community Guidelines
+                    </a>
+                    <a href="/reviews/listing-guidelines" rel="nofollow" target="_blank">
+                     Listing Guidelines
+                    </a>
+                   </div>
+                   <div class="footer-link-wrapper">
+                    <a href="/reviews/faq/rules-of-engagement" rel="nofollow" target="_blank">
+                     Rules of Engagement
+                    </a>
+                    <a href="/reviews/faq" rel="nofollow" target="_blank">
+                     FAQs
+                    </a>
+                    <a href="https://www.gartner.com/en/about/policies/privacy" rel="nofollow" target="_blank">
+                     Privacy
+                    </a>
+                   </div>
+                   <div class="footer-link-wrapper">
+                    <a href="https://www.gartner.com/en/about/policies/terms-of-use" rel="nofollow" target="_blank">
+                     Terms of Use
+                    </a>
+                   </div>
+                   <div class="footer-social-links">
+                    <a href="https://www.linkedin.com/company/gartner/mycompany/verification/" target="_blank">
+                     <svg fill="none" height="32" viewbox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.0004 32C7.1638 32 0.000366211 24.8366 0.000366211 16C0.000366211 7.16343 7.1638 0 16.0004 0C24.8369 0 32.0004 7.16343 32.0004 16C32.0004 24.8366 24.8369 32 16.0004 32ZM16.0004 30.5114C24.0147 30.5114 30.5118 24.0143 30.5118 16C30.5118 7.98571 24.0147 1.48857 16.0004 1.48857C7.98608 1.48857 1.48894 7.98571 1.48894 16C1.48894 24.0143 7.98608 30.5114 16.0004 30.5114ZM8.71751 22.5343H11.7249V12.9109H8.71751V22.5343ZM10.1444 11.7057H10.1227C9.03465 11.7057 8.32894 10.9703 8.32894 10.0389C8.32894 9.088 9.05522 8.36743 10.1655 8.36743C11.2741 8.36743 11.9569 9.08571 11.9781 10.036C11.9787 10.9674 11.2747 11.7057 10.1444 11.7057ZM23.7547 22.5343H20.3449V17.5543C20.3449 16.2503 19.8129 15.3611 18.6392 15.3611C17.7427 15.3611 17.2438 15.9611 17.0118 16.54C16.9249 16.7469 16.9381 17.0354 16.9381 17.3269V22.5349H13.5604C13.5604 22.5349 13.6044 13.7126 13.5604 12.9109H16.9381V14.4206C17.1375 13.76 18.2164 12.8166 19.9392 12.8166C22.0758 12.8166 23.7547 14.2017 23.7547 17.1829V22.5343Z" fill="#002856">
+                      </path>
+                     </svg>
+                    </a>
+                    <a href="https://twitter.com/Gartner_inc" target="_blank">
+                     <svg fill="none" height="32" viewbox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.0004 32C7.16351 32 0.000366211 24.8363 0.000366211 16C0.000366211 7.16372 7.16351 0 16.0004 0C24.8372 0 32.0004 7.16315 32.0004 16C32.0004 24.8369 24.8366 32 16.0004 32ZM16.0004 30.5116C24.0149 30.5116 30.5119 24.0146 30.5119 16C30.5119 7.98542 24.0144 1.48844 16.0004 1.48844C7.98636 1.48844 1.48823 7.98542 1.48823 16C1.48823 24.0146 7.98578 30.5116 16.0004 30.5116ZM22.805 12.3655C22.3058 12.5874 21.7677 12.7366 21.2045 12.8047C21.7803 12.4599 22.2223 11.9132 22.4299 11.2625C21.8901 11.5816 21.2948 11.8132 20.659 11.9384C20.1512 11.3969 19.4267 11.0578 18.6239 11.0578C17.0857 11.0578 15.8368 12.3066 15.8368 13.8454C15.8368 14.065 15.8608 14.2765 15.9089 14.4801C13.5913 14.3635 11.5385 13.2553 10.1621 11.5667C9.92196 11.9807 9.78472 12.4599 9.78472 12.9705C9.78472 13.9363 10.2765 14.7906 11.0256 15.2909C10.5687 15.2767 10.1375 15.1503 9.76185 14.9427V14.977C9.76185 16.3282 10.7225 17.4553 11.9988 17.7103C11.7643 17.7761 11.519 17.8087 11.2634 17.8087C11.0839 17.8087 10.9095 17.7921 10.7397 17.7595C11.0936 18.8659 12.1229 19.6728 13.3437 19.6951C12.3899 20.4424 11.1868 20.8879 9.88078 20.8879C9.65606 20.8879 9.43362 20.8753 9.21633 20.8501C10.4503 21.6404 11.9153 22.1019 13.4895 22.1019C18.6187 22.1019 21.4218 17.855 21.4218 14.1696C21.4218 14.0484 21.4195 13.9277 21.4143 13.8088C21.9587 13.4154 22.4322 12.9242 22.805 12.3655Z" fill="#002856">
+                      </path>
+                     </svg>
+                    </a>
+                   </div>
+                   <div class="footer-link-wrapper">
+                    ©  2022 Gartner, Inc. and/or its affiliates.
+                    <br/>
+                    All rights reserved.
+                   </div>
+                  </div>
+                 </ul>
+                </div>
+               </div>
+               <div class="logo-block">
+                <a class="logo" data-interaction="navigation" data-logo="true" data-navbar="true" href="/peer-insights" id="logo">
+                 <svg fill="none" height="44" viewbox="0 0 127 44" width="127" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1204_31953)">
+                   <path d="M59.467 4.41113L59.2995 6.47712H58.4619C57.1218 6.47712 56.4238 7.56595 56.4238 8.59895V13.2614H54.0508V4.41113H56.3122L56.368 5.52788C56.8426 4.77408 57.6802 4.41113 58.6853 4.41113H59.467Z" fill="#002856">
+                   </path>
+                   <path d="M42.9112 13.2334H40.5101V8.57099C40.5101 7.59384 40.4264 6.36541 39.0584 6.36541C37.7462 6.36541 37.2157 7.31465 37.2157 8.4314V13.2334H34.8147V4.41109H37.0203L37.0761 5.52785C37.5508 4.77404 38.4442 4.18774 39.7284 4.18774C42.1294 4.18774 42.8832 5.91871 42.8832 7.70551V13.2334H42.9112Z" fill="#002856">
+                   </path>
+                   <path d="M33.7817 11.1675L33.6142 13.1776C33.0279 13.3451 32.5254 13.3731 31.9112 13.3731C29.6497 13.3731 29.0076 12.3401 29.0076 10.2741V1.89844H31.4086V4.38321H33.7817L33.6142 6.4492H31.4086V10.1066C31.4086 10.9441 31.632 11.3908 32.4975 11.3908C32.8604 11.3908 33.2792 11.3629 33.7817 11.1675Z" fill="#002856">
+                   </path>
+                   <path d="M28.2259 4.41113L28.0305 6.47712H27.3883C26.0482 6.47712 25.3782 7.56595 25.3782 8.59895V13.2614H22.9772V4.41113H25.2386L25.2944 5.52788C25.769 4.77408 26.6066 4.41113 27.6396 4.41113H28.2259Z" fill="#002856">
+                   </path>
+                   <path d="M12.2005 12.2563C10.5812 13.1218 8.96193 13.6243 6.81218 13.5685C2.87563 13.4568 0.027916 10.9999 0.027916 6.84005C0.027916 2.68015 2.90355 0.0557857 6.8401 -5.18998e-05C8.82233 -0.0558895 10.6091 0.474567 12.0051 1.70299L10.3299 3.40604C9.46446 2.65223 8.20812 2.23345 6.67259 2.28929C4.21573 2.40096 2.70812 4.21568 2.6802 6.70046C2.65228 9.38066 4.29949 11.2233 6.86802 11.3071C8.06852 11.335 8.93401 11.1675 9.68781 10.8324V8.09639H7.00761L7.17512 5.83497H12.2005V12.2563Z" fill="#002856">
+                   </path>
+                   <path d="M50.5609 7.81722C50.4771 6.70047 49.6396 6.0025 48.4949 6.03042C47.3223 6.08626 46.5685 6.84006 46.401 7.81722H50.5609ZM52.934 9.65986H46.3731C46.5685 10.7766 47.4619 11.4746 48.5508 11.5025C49.6396 11.5304 50.2259 11.1954 51.0076 10.4137L52.5711 11.6142C51.4543 12.9822 50.1421 13.4847 48.6066 13.4847C45.9543 13.4847 43.9442 11.6142 43.9442 8.85022C43.9442 6.08626 45.9264 4.2157 48.4949 4.2157C51.3426 4.2157 52.8782 5.94666 52.8782 8.98981V9.65986H52.934Z" fill="#002856">
+                   </path>
+                   <path d="M19.1802 9.38064H18.8452C17.7284 9.38064 15.7183 9.43647 15.7462 10.6091C15.7462 12.2842 19.1802 11.7537 19.1802 9.74358V9.38064ZM21.4975 7.45424V13.2334H19.4036L19.3477 12.3679C18.7056 13.1776 17.6447 13.4568 16.5838 13.4568C14.9645 13.4568 13.4289 12.6471 13.401 10.7766C13.3452 7.8451 16.6954 7.62175 18.8173 7.62175H19.236V7.538C19.236 6.56084 18.5939 6.03038 17.3934 6.03038C16.5279 6.03038 15.6624 6.36541 15.0482 6.97962L13.6802 5.58368C14.9366 4.57861 16.2208 4.18774 17.6168 4.18774C20.269 4.18774 21.4975 5.44409 21.4975 7.45424Z" fill="#002856">
+                   </path>
+                   <path d="M58.3223 12.1446V11.7258H58.6015C58.7411 11.7258 58.9086 11.7537 58.9086 11.9212C58.9086 12.1446 58.7411 12.1446 58.5736 12.1446H58.3223ZM58.3223 12.3121H58.5736L58.9365 12.8984H59.1599L58.769 12.2842C58.9645 12.2563 59.132 12.1446 59.132 11.8933C59.132 11.6141 58.9645 11.5025 58.6574 11.5025H58.1269V12.8705H58.3223V12.3121ZM58.5736 13.4009C59.2157 13.4009 59.7741 12.8984 59.7741 12.2004C59.7741 11.5304 59.2157 11.0278 58.5736 11.0278C57.9315 11.0278 57.3731 11.5304 57.3731 12.2004C57.3452 12.8984 57.9035 13.4009 58.5736 13.4009ZM57.5964 12.2283C57.5964 11.67 58.0152 11.2512 58.5736 11.2512C59.1041 11.2512 59.5508 11.67 59.5508 12.2283C59.5508 12.8146 59.132 13.2334 58.5736 13.2334C58.0152 13.2055 57.5964 12.7867 57.5964 12.2283Z" fill="#002856">
+                   </path>
+                   <path d="M10.9721 28.5609V28.6447C10.9721 31.995 8.45939 33.3071 5.44416 33.3071H2.87563V39.7285H0.977158V23.9543H5.47208C8.48731 23.9543 10.9721 25.2944 10.9721 28.5609ZM9.0736 28.6726V28.5889C9.0736 26.3554 7.7335 25.5178 5.61168 25.5178H2.90355V31.8274H5.58376C7.84518 31.7995 9.0736 30.7107 9.0736 28.6726Z" fill="#002856">
+                   </path>
+                   <path d="M11.5025 34.1167V33.9492C11.5025 30.4593 13.736 28.0304 16.9188 28.0304C19.599 28.0304 22.1117 29.6497 22.1117 33.7817V34.368H13.4289C13.5127 36.9923 14.769 38.4441 17.1421 38.4441C18.9289 38.4441 19.9619 37.7741 20.2132 36.4339H22.0558C21.665 38.7512 19.7386 39.9796 17.1142 39.9796C13.8477 39.9517 11.5025 37.6624 11.5025 34.1167ZM16.9467 29.538C15.0761 29.538 13.8198 30.8223 13.5127 32.8883H20.269C20.0736 30.4872 18.8452 29.538 16.9467 29.538Z" fill="#002856">
+                   </path>
+                   <path d="M23.731 34.1167V33.9492C23.731 30.4593 25.9645 28.0304 29.1472 28.0304C31.8274 28.0304 34.3401 29.6497 34.3401 33.7817V34.368H25.6294C25.7132 36.9923 26.9695 38.4441 29.3426 38.4441C31.1294 38.4441 32.1624 37.7741 32.4137 36.4339H34.2563C33.8655 38.7512 31.9391 39.9796 29.3147 39.9796C26.0482 39.9517 23.731 37.6624 23.731 34.1167ZM29.1472 29.538C27.2766 29.538 26.0203 30.8223 25.6853 32.8883H32.4416C32.302 30.4872 31.0457 29.538 29.1472 29.538Z" fill="#002856">
+                   </path>
+                   <path d="M38.5 30.264C39.2259 28.9518 40.231 28.0584 42.297 27.9746V29.7056C39.9797 29.8172 38.5 30.5431 38.5 33.3909V39.7284H36.6574V28.198H38.5V30.264Z" fill="#002856">
+                   </path>
+                   <path d="M50.3376 39.7564H48.4112V23.9543H50.3376V39.7564Z" fill="#40B3E1">
+                   </path>
+                   <path d="M54.8604 30.0406C55.3909 28.9518 56.6751 28.0026 58.5736 28.0026C60.9746 28.0026 62.6497 29.3147 62.6497 32.665V39.7564H60.8071V32.5254C60.8071 30.4873 59.9416 29.5939 58.099 29.5939C56.3959 29.5939 54.8604 30.6828 54.8604 32.7488V39.7564H53.0178V28.198H54.8604V30.0406Z" fill="#40B3E1">
+                   </path>
+                   <path d="M64.1294 36.2107H65.9162C66.0558 37.5787 66.7817 38.4442 68.6523 38.4442C70.3832 38.4442 71.165 37.8579 71.165 36.6015C71.165 35.3452 70.2716 34.9823 68.4568 34.6472C65.4416 34.0889 64.4365 33.2513 64.4365 31.2411C64.4365 29.0914 66.5305 28.0026 68.3452 28.0026C70.4112 28.0026 72.2259 28.8401 72.533 31.3528H70.7741C70.5228 30.0965 69.797 29.5381 68.3452 29.5381C67.0051 29.5381 66.1675 30.2081 66.1675 31.1853C66.1675 32.2183 66.7538 32.6371 68.8756 33.0279C71.2766 33.4746 72.9518 34.0051 72.9518 36.462C72.9518 38.5559 71.5279 39.9797 68.7081 39.9797C65.9162 39.9518 64.2411 38.5559 64.1294 36.2107Z" fill="#40B3E1">
+                   </path>
+                   <path d="M74.6548 24.5685C74.6548 23.8985 75.1853 23.3401 75.8832 23.3401C76.5812 23.3401 77.1117 23.8705 77.1117 24.5406C77.1117 25.2106 76.5812 25.769 75.8832 25.769C75.2132 25.769 74.6548 25.2386 74.6548 24.5685ZM76.8325 39.7563H74.9898V28.198H76.8325V39.7563Z" fill="#40B3E1">
+                   </path>
+                   <path d="M79.1218 40.4264H80.9924C81.2716 41.7665 82.3604 42.4365 84.3426 42.4365C86.604 42.4365 88.0558 41.3477 88.0558 38.8629V37.1878C87.1903 38.5279 85.7386 39.3376 84.1472 39.3655C81.104 39.3655 78.8705 37.0761 78.8705 33.8934V33.7259C78.8705 30.599 81.0761 27.9746 84.2589 27.9746C86.1853 27.9746 87.3858 28.8959 88.0279 30.0406V28.198H89.8426V38.9746C89.8147 42.3249 87.5533 43.9721 84.3147 43.9721C80.9365 44 79.4289 42.3807 79.1218 40.4264ZM88.1117 33.7817V33.6142C88.1117 31.0178 86.6878 29.5101 84.4543 29.5101C82.165 29.5101 80.7969 31.2132 80.7969 33.6421V33.8096C80.7969 36.3223 82.4162 37.8299 84.3705 37.8299C86.4924 37.8579 88.1117 36.3502 88.1117 33.7817Z" fill="#40B3E1">
+                   </path>
+                   <path d="M94.6168 30.0406C95.1472 28.9518 96.4315 28.0025 98.33 28.0025C100.703 28.0025 102.406 29.3147 102.406 32.665V39.7563H100.563V32.5254C100.563 30.4873 99.698 29.5939 97.8553 29.5939C96.1523 29.5939 94.6168 30.6827 94.6168 32.7487V39.7563H92.7741V22.67H94.6168V30.0406Z" fill="#40B3E1">
+                   </path>
+                   <path d="M105.365 36.8807V29.7614H103.718V28.198H105.365V25.5736H107.208V28.198H109.916V29.7614H107.208V36.7132C107.208 37.83 107.711 38.3883 108.632 38.3883C109.107 38.3883 109.609 38.3046 110.056 38.1371V39.6726C109.553 39.8401 109.023 39.9239 108.492 39.9239C106.371 39.9239 105.365 38.6675 105.365 36.8807Z" fill="#40B3E1">
+                   </path>
+                   <path d="M110.949 36.2107H112.736C112.876 37.5787 113.602 38.4442 115.444 38.4442C117.203 38.4442 117.957 37.8579 117.957 36.6015C117.957 35.3452 117.063 34.9823 115.249 34.6472C112.233 34.0889 111.228 33.2513 111.228 31.2411C111.228 29.0914 113.322 28.0026 115.137 28.0026C117.203 28.0026 119.018 28.8401 119.325 31.3528H117.566C117.287 30.0965 116.589 29.5381 115.137 29.5381C113.797 29.5381 112.959 30.2081 112.959 31.1853C112.959 32.2183 113.546 32.6371 115.668 33.0279C118.069 33.4746 119.744 34.0051 119.744 36.462C119.744 38.5559 118.32 39.9797 115.5 39.9797C112.708 39.9518 111.061 38.5559 110.949 36.2107Z" fill="#40B3E1">
+                   </path>
+                   <path d="M121.279 37.2716H123.373V37.6904H122.591V40.0635H122.061V37.6904H121.279V37.2716Z" fill="#002856">
+                   </path>
+                   <path d="M125.16 39.1979L125.886 37.2994H126.584V40.0913H126.053V37.9695L125.216 40.0913H125.048L124.211 37.9695V40.0913H123.736V37.2994H124.434L125.16 39.1979Z" fill="#002856">
+                   </path>
+                  </g>
+                  <defs>
+                   <clippath id="clip0_1204_31953">
+                    <rect fill="white" height="44" width="126.584">
+                    </rect>
+                   </clippath>
+                  </defs>
+                 </svg>
+                </a>
+               </div>
+              </div>
+              <div class="search-block">
+               <button class="icon-button back-button">
+                <svg fill="none" height="18" viewbox="0 0 32 32" width="18" xmlns="http://www.w3.org/2000/svg">
+                 <g clip-path="url(#clip0_1177_34919)">
+                  <path d="M26.6667 14.6669H10.44L17.8933 7.21353L16 5.33353L5.33334 16.0002L16 26.6669L17.88 24.7869L10.44 17.3335H26.6667V14.6669Z" fill="#002856">
+                  </path>
+                 </g>
+                 <defs>
+                  <clippath id="clip0_1177_34919">
+                   <rect fill="white" height="32" width="32">
+                   </rect>
+                  </clippath>
+                 </defs>
+                </svg>
+               </button>
+               <input aria-hidden="false" autocomplete="off" class="universal-search-box" id="universalSearchBox" name="universalSearchBox" placeholder="Search insights, advice, and more" type="text" value=""/>
+               <button class="icon-button magnifier-button">
+                <svg fill="none" height="21" viewbox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                 <path clip-rule="evenodd" d="M14.6671 13.3334H13.7337L13.3837 12.9834C14.5504 11.7 15.2504 9.95003 15.2504 8.08336C15.2504 3.88336 11.8671 0.500031 7.66707 0.500031C3.46707 0.500031 0.0837402 3.88336 0.0837402 8.08336C0.0837402 12.2834 3.46707 15.6667 7.66707 15.6667C9.53374 15.6667 11.2837 14.9667 12.5671 13.8L12.9171 14.15V15.0834L18.7504 20.9167L20.5004 19.1667L14.6671 13.3334ZM7.66707 13.3334C4.75041 13.3334 2.41707 11 2.41707 8.08336C2.41707 5.1667 4.75041 2.83336 7.66707 2.83336C10.5837 2.83336 12.9171 5.1667 12.9171 8.08336C12.9171 11 10.5837 13.3334 7.66707 13.3334Z" fill="#002856" fill-rule="evenodd">
+                 </path>
+                </svg>
+               </button>
+              </div>
+              <div>
+               <div>
+                <div class="links-container">
+                 <ul class="nav-links">
+                  <li>
+                   <a>
+                    <p>
+                     Reviews
+                     <span class="arrow-down">
+                     </span>
+                    </p>
+                   </a>
+                   <ul class="dropdown-links Reviews">
+                    <li>
+                     <a class="clickable" data-interaction="write-a-review" href="/reviews/survey/vendor-product">
+                      <p>
+                       Write a review
+                       <!-- -->
+                      </p>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="clickable" data-interaction="product-reviews" href="/reviews/markets">
+                      <p>
+                       Product Reviews
+                       <!-- -->
+                      </p>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="clickable" data-interaction="vendor-directory" href="/reviews/vendors">
+                      <p>
+                       Vendor Directory
+                       <!-- -->
+                      </p>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="clickable" data-interaction="product-reviews" href="/reviews/markets">
+                      <p>
+                       Product Comparisons
+                       <!-- -->
+                      </p>
+                     </a>
+                    </li>
+                   </ul>
+                  </li>
+                  <li>
+                   <a>
+                    <p>
+                     Community
+                     <span class="arrow-down">
+                     </span>
+                    </p>
+                   </a>
+                   <ul class="dropdown-links Community">
+                    <li>
+                     <a class="clickable" data-interaction="Ambassador" href="/ambassador">
+                      <p>
+                       Ambassador
+                       <!-- -->
+                      </p>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="clickable" data-interaction="benchmark-surveys" href="/peer-insights/reports/industry/unanswered">
+                      <p>
+                       Benchmark Surveys
+                       <!-- -->
+                      </p>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="clickable" data-interaction="one-minute-insights" href="/peer-insights/reports/industry/oneminuteinsights">
+                      <p>
+                       One-Minute Insights
+                       <!-- -->
+                      </p>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="not-clickable" data-interaction="Member Directory" id="vendor-directory">
+                      <p>
+                       Member Directory
+                       <!-- -->
+                       <span class="sub-text">
+                        COMING SOON!
+                       </span>
+                      </p>
+                     </a>
+                    </li>
+                   </ul>
+                  </li>
+                  <li>
+                   <a>
+                    <p>
+                     Events
+                     <span class="arrow-down">
+                     </span>
+                    </p>
+                   </a>
+                   <ul class="dropdown-links Events">
+                    <li>
+                     <a class="clickable" data-interaction="evanta" href="https://www.evanta.com/">
+                      <p>
+                       Evanta
+                       <!-- -->
+                      </p>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="clickable" data-interaction="destination-conferences" href="https://www.gartner.com/en/conferences/calendar">
+                      <p>
+                       Destination Conferences
+                       <!-- -->
+                      </p>
+                     </a>
+                    </li>
+                   </ul>
+                  </li>
+                 </ul>
+                </div>
+               </div>
+               <div class="profile-container">
+                <div class="login-button">
+                 Join / Log in
+                </div>
+                <div class="divider">
+                </div>
+                <button class="icon-button vendor-button">
+                 <svg fill="none" height="33" viewbox="0 0 32 33" width="32" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.1433 10.0778H13.0861V12.037H11.1433V10.0778ZM15.029 12.037H16.9718V10.0778H15.029V12.037ZM18.9147 12.037H20.8576V10.0778H18.9147V12.037ZM11.1433 15.9554H13.0861V13.9962H11.1433V15.9554ZM15.029 15.9554H16.9718V13.9962H15.029V15.9554ZM18.9147 15.9554H20.8576V13.9962H18.9147V15.9554ZM11.1433 19.8738H13.0861V17.9146H11.1433V19.8738ZM15.029 19.8738H16.9718V17.9146H15.029V19.8738ZM18.9147 19.8738H20.8576V17.9146H18.9147V19.8738ZM11.1433 23.7921H13.0861V21.8329H11.1433V23.7921ZM15.029 23.7921H16.9718V21.8329H15.029V23.7921ZM18.9147 23.7921H20.8576V21.8329H18.9147V23.7921ZM11.1433 27.7105H13.0861V25.7513H11.1433V27.7105ZM15.029 27.7105H16.9718V25.7513H15.029V27.7105ZM18.9147 27.7105H20.8576V25.7513H18.9147V27.7105ZM21.829 5.17989V3.2207H19.8861V5.17989H6.28613V30.6493H8.22899V7.13907H23.7718V30.6493H25.7147V5.17989H21.829Z" fill="#002856">
+                  </path>
+                 </svg>
+                </button>
+               </div>
+              </div>
+             </nav>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="h-container container-fluid">
+         <div class="g-container body-content" id="loading-card-container">
+          <div>
+           <div class="Loading-Card">
+            <div>
+             <div>
+             </div>
+             <div>
+             </div>
+             <div>
+             </div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="login-modal lead-generation-modal-automated-tests">
+         <div class="piDialog new-login-design">
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="container-fluid" data-html2canvas-ignore="true" id="mainFooter">
+       <div class="footer-content col-xs-12">
+        <footer class="row g-container" data-footer="true" data-interaction="Footer Navigation">
+         <div class="logoContainer">
+          <div class="logo">
+           <a href="/peer-insights/home">
+            <img alt="Software reviews and ratings for EMMS, BI, CRM, MDM, analytics, security and other platforms - Peer Insights by Gartner" class="gartner-logo" data-catchpoint-elem="footer-gartner-logo" data-footer="true" data-interaction="Footer Navigation" data-logo="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAiCAYAAACgCNxfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAhfSURBVHgB7VpNUhtJFn6ZkrAmZjH4BEibGXk2lk/g8npibDnapr1DnABxAqQTgE8AbDrcdkeATXf0kuIEiE0bryj1BSxvumVJldnfe5lVkpDEj4GOxq0volSlrKz8efn+8r1UlKD0LCBSa6RUmSzNk6I2WbtL1GvQ8W5EM9wIlPyWnq0R6bovO8LVxrWAq4Arok73AUW7bboMSot1sqZNH37YoBnOQOl5FcSyuE6o9CIYf1cp0JcgaXOGM6FA5H3cAiK7TMdvtqbWLFTmKZ9dIavLqFvANxGp7qqoJ14oooco30b5krvrfaiwNnqAGqMD38pDMuYtab0i/yzefXjzMm3/Tq6O+vd93e10PKXnm2jriDR/o+6jfJm+Eii6t/hRdH6nezdVMylBE8AOUC5AdSYEExBlFsS0RJ97RcrPsZpZErvBsPopkdn3XbRQvoHvymkdqz6h0oJ7bx4RZSOprzAOS29hh3C3T6DCVkWFsTQNhtyi4+8L9JVAC/HHwBKhqoMrX3DcqIsgeJX6pi4GmgmVz5fTz7js/eu7dPwq9CWREOv99wM7YExDypRa9UMISNkKsb2xBGnoou3PNSxGU5yCkdHaB18T8RlaOIqRzw4I2enWhNjM7QlKLwpE8Sa4/SNl1KFbmNPIbNN5UNmm3G3cTMucdDBA8LkTuSyVZYEHNuiAfnnTpK8MWAC7JU9WrYseZrAqOn4FHa+GPB8QXyRDL/vFeUnXBWW96uI2pf3B1aHLeV+3DFnKdzeoM7ck/n9+7hD6FlxsI+HAYTsgepkf+hF0f5l05smZLbOuN3ae7n1bG+H2SZD9hlpBH0/I9ELYmHlRP9a8FGYoLbp6ZTBIJ1ehTm/30m7xXxSamjwRDUNIrD4KJGoAxlYxQdgoshrqRAOOh3ejMzvi4ZwF1ufOmK6Lnj8Lxz+EYnClebTN/TMyKhyp1/Fqclhd3nKokX/ianqjqnWbfvstGuG05H2n07wQB7r64NpO+8Icy3sR7vuX75pT3hdEPc4wwwwzzDDDDDPMMMNfG8HOyaX3DcG7k1rwrrVON4ysy4TpzbRENlgcasYG7Kzw9A0BxAooh/H0zKPwaTGiKwKErJDSO7ivho+Ll0kO+bD7zUL7e4FkJ6wbpDLYwdIn7GLXEaq+cQ6YCCvjuR7EFEoENpa8xLUCzDIPKdnEvUBfiOzgUYdDYeQtF8NBGKFUeXmbc8KQIt6B1+lmwLnzKqjIYZyIvgDZqW+sAsdwHIcTMViQkYwY0UQVxXX+caeKINxDvOfg3RGp3ka6gP99XiZDK2mCxyL4lmTVpiD4qbVGsWmBgyPKaAQNoRYsVGRsGomKYk6kLGfZJKzN8adtqJut9F1Gr0+pH7i5IoMXI/+QQVlsVv2iuf5/Bnd3qUZacaauTX3L76NgD6qSA4iCzBokAWMz2+H/i6Go0SljPQ1NU9Ev+MYjib9wpJSDdlodyMXRSklnDhH/To7TkCvyXmlkzhSiqXP7aUyfo6OSR8hturttnRtuNiCSQpozA7tgzSf8R//EE9wXQjKymsdRQd8HEjxUej14e1L3LSRcWkgJmtOHvv5bX3+FslC5XI+GE1RqgWK978fBcy6gr8NU5VjlYmnWfsLY5FlsDo+Hx8oLywFJ9838pOlNlgAmppUBRaKW7i0egnPb9OF1kNYpvUBGzBxK+pIlgaWD0Bl1H9H7lKM33CIxwenRUA9o9/XF87oWE48HRhmT2cCkkBiiCp5DYoOpzYPwf8WmJwJy0boysa2eP/3h2ksWfyPY+3WfyI7WVVi0nime6vcEDFADp9fwP8J/SLHZgMSFvu8tTquGT4o138pW8C4KMdYAz2N2aCAByuy4kxG4OOulOG8LYjL3c25AU2PkS45IMldYchOVCdtwTJ2wJLjcwhAukDkbxdGwCDvCQXqcsW7LFeulhDNZ/YSPF8YWQLhQIS9NohJGJc/G4wkmSNSEfpuY079oGiyYS9FDUUPJd48LAcY00QkYSIDVHI+P/L8oDfk6N5Ub3kkTI6M48B2DyEjqlBarowOynMyhK+LjtBdMFHDdMkLYkFjNvnvExVP0rlMDaoLBzKDM0NVhIPUsOVBDwR5ne8GUQzbpNIZUUCecaAxjpCUzMuinWKTpmS2XAYPOy1zG174WeO7aDX7ChitmadVrLJHgwuLEDya5uV0sTpauPhYnWVX0XUN7ZdCsCgbchE0qQC3VT9c/v8t/9iL6PNcWDj9+NSpG9xYrcvqNJcayaNL9sWSJ83xYBW3RDUCI3qcKT87bgCYmv5vYCNkHeDjv5dcQTLI0Np4MCHUd48EOmk90sDfEXfIF4sMmcT59HPrcFjllyelF9m6GT8mxarK0Lp6BwDYkaf+fZ7W0Dhtzo5BiHD5jdM3oQvLA8TLxAQL5naRqdLzK7mqwF7FnUsF3VTzvg0ALdHk4O2J8fw7M9enmTOyOzsCF9Qcc+Mjmv7+pCJ1Kz9bOXwDG8es6lmpbjoskhtqdfBvsBZK8Lrt0fNgrMeZELef33wy8nm+I67nX+hj82DoB9/OiNzwXjtZnKcmaB/CsjpBzros7zO5iP770GL26aQgDoF9xfXNUF7aGt+THcoL22YvzDKIj0rmmMK7SZX8494J5VjkbBP2pzDz93g2n5nk5r8t1VDYay+1yG+fkiJl7RjZNg8mO1MGtnZS7zRW5k93YVA0b4OG6zPGslk4baClX2Gv0zV2p5/qdH6s3YTyiBg367Uu/7bQsBq1g3BP3OJ1/HvPv5gpkMu0ruye3Dd7fB7HM03SReXPGGy6DhXm88KeeO70Gu3/LkI2XhdhORURS1udjkdjTxHaV/mT87SQgQaoiSFRWeB2h7y/BHzAbFMOU3x4dAAAAAElFTkSuQmCC"/>
+           </a>
+          </div>
+          <div class="social-icons footer-jsx">
+           <a href="https://www.linkedin.com/showcase/gartner-peer-insights">
+            <img alt="Social Icons" class="social-icons" dataattrs="[object Object]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANUSURBVHgBxVdNTttAFH4zCWnY0ROQLtoGNqQnCNzAiCaqukGcAG7QcIKGEzTskKhU9wQkJ2i6i9QF7gmaHS4BT7/3xnbsEGMTAv2kxOPxzHtv3rxfRUVRc9aouuJg1CRDDdKqhueafFM0psB4eA7xNiB/4pLnjouQVbkr6h/A6PYIDPeFITMjNaAgAENlmRiDedXAaJ1FtRtNj2hyTCPXo4UE4BOvVj6B6VF4wlNSJZdGZ326D5sfGxTcHBFrioVR1KWr6+MsjajMU1NwIQSMOaG/k05Rlc7Q6GC0j59HdL0zTxt3Bdhs4QTqm33RB7knzhXk/TbofJHxrdmlX+fDbAGmJ6csiRcTIpvuVACx8sqPeYuWLoR//S66Uh0vYIMTC2a1L5k5Y3TmQYAD4WF5CVRCuktxndH5QWqjaKZ8SEa9JDXpPlq4jVYXtA6h5VdMK9SAWKsnfjuL1RV80x34OTZVLuixeAGPYrc2K+yquIKGw9EMrmL6T6L6WQz57hFTmCe0q8mX8AoXoZO5G0ypi38EIfWdNNxoGTDGBT0J7WWYwTax+mf8M4bvj6lKHUREoiuywUjsIswDjEhzdaeWes/C6GufNtq4Bmpq3McWpn5nLq6WEeMrl/KrVlw7V3XiObaL+t4+CP6J5+rtS3qz59wrRGAGnD/YCDncDmlRcCKiUi/OjBbIAYh+kUbmQUPrgalpm+HUw+J8EnyXcgDN7nuanreWPl9w8MSaMi0DarKL+OFh1MNVbEm9YFHL26qtT5o1WhxeyugM/ZwKprLpKsOaG2shUEDSpcPA+LXydChxk54dSowfGtB9UZXk7WfC6xbbSA2/gaaq71o7UA49F0rKegeK17LE5o1WFJvnlF5lD1EjTFKofAU3eGo7Z4L0ekUurtVLr0/AZt6mZN6YF0/W2wYu9JmeGvV2T3jdCVKcp+XDE9oC02Yeb1vdaGpaknFa9v9nSSZ5Wu/YF04w98TxxzDnwyXsTKcWct0W53wWYgnXITRC5kx7RrP5jUnBFusOkp3VgxqTJOICkgmgZOOqKatwiYXHiTmmRL1kTmdVrDmdtlgUCuNJCE82p6TWcaHbcQMrvWR+FZ0vQIS4PZcSroGd66n23EhVNZTQ7vuF2/N/hG6I8gbZH9IAAAAASUVORK5CYII="/>
+           </a>
+           <a href="https://twitter.com/Gartner_PI">
+            <img alt="Social Icons" class="social-icons" dataattrs="[object Object]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANjSURBVHgBvVddUhpBEO4ZlJA3buD6kBJ9CTcQb0CqgpXKi/EE4gnUEwRPQPJmRavCDYAThLyRyoObE8hTRAjb6e5Zll1gdkcC+aosZ3S2u6d/vp5W4AqvWoTCdpVWh4BQBq08+l2U/ykYQIA+/e7RrgvDcQv81sBFrMo8UXpHiiZ1UngiClkZqC4EASlURgki/V2VabXDppoP8RPA+Ar6LR9WMoBv/DJ/QUrr4Q0/g8q1oH/TgTQcvC9D8KcO7Ck2RkEDHkdXNo8o660haIsAxGt4Gl+6unROxiWtTujHBxgdLfPGogEHNbqB+mo2+jTzxpmGvK2QnKasJ/gGft727AbMbg42i1czwi5XJ09uQDmjf+OTqiOzybclvxYM2D/+CJLB7PY1Kk8YEZyKDk7uBNhFpWOEUq0Jm8Z+rWF0VT3ehh6QbPWlbjeNF1RRXNa4zaVKyzLFY5h/EOLo357C/wB7IaDyfBrvbsFQ6JVKBK5TP2KXLcsNyfBJU5hQ6BjPjTxiybmSi4DYAqXPmNopBKoC7H7bYcYr4gbO3jBuSXDlkAyhaaZjzfsL2AY7+ncdQ+lwqGnxmha/IA25HB/2yIh7IpaLyBC5/ZT74zckY36P/VSZAXbZYA2Gbnuph6WEsGM2+tIYUmuHybsIReHMom5NXg/Q2wpdl36YQ2A6YVxLxXo+Sx4D6YyCogYXcH6YmLnhcdRxPapNTWIx+2iOS9TPPkfl7NI5FelEHOhQqJf5QWHo6AFHMkNKfq18TYvvYB4P6ejxraih8PvAFg4Mzt37iJLkJw9oqklVNH3bAu5eUnqTipTt9C0YyeIwkvIfdw1wgfCKeL2rybUtI0BVrR8UCqQw/4E01ZPZr5g/rijpdp2VM3JK+oA8XgXMzXu1h3ifTgUTkOvZZd+Wju+nndeUIeYaEoaFPm0BE9Nz34gRhLy8xWSN+nRKLvwrWDbr2KtF4Zpxm2nL38xmzU8yUR57F/a/7E7/PGPCaZkJbJ1vDcr5cjEkqZhjq+npHBmxhnCIjFA5y57zbPZg4jhiLSA+WT1rMImDExPVmRFA7ZhfTWkPFzGebsycMp0lMyYrt+F0NmJBaIwvFB4fTkHtUEAr0QArs+S4sfpwOo9oPBcmLNOXO4nxHOVV1RNqHw6dx/O/L3KEep+aX6wAAAAASUVORK5CYII="/>
+           </a>
+          </div>
+         </div>
+         <div class="talign-right footerNav">
+          <ul>
+           <div class="delimited-list">
+            <span>
+             <li>
+              <a href="/reviews/guidelines" rel="nofollow">
+               Community Guidelines
+              </a>
+             </li>
+             <span class="divider">
+              |
+             </span>
+            </span>
+            <span>
+             <li>
+              <a href="/reviews/listing-guidelines" rel="nofollow">
+               Listing Guidelines
+              </a>
+             </li>
+             <span class="divider">
+              |
+             </span>
+            </span>
+            <span>
+             <li>
+              <a href="/reviews/vendors" rel="nofollow">
+               Browse Vendors
+              </a>
+             </li>
+             <span class="divider">
+              |
+             </span>
+            </span>
+            <span>
+             <li>
+              <a href="/reviews/faq/rules-of-engagement" rel="nofollow">
+               Rules of Engagement
+              </a>
+             </li>
+             <span class="divider">
+              |
+             </span>
+            </span>
+            <span>
+             <li>
+              <a href="/reviews/faq" rel="nofollow">
+               FAQs
+              </a>
+             </li>
+             <span class="divider">
+              |
+             </span>
+            </span>
+            <span>
+             <li>
+              <a href="https://www.gartner.com/en/about/policies/privacy" rel="nofollow" target="privacyPrinciples">
+               Privacy
+              </a>
+             </li>
+             <span class="divider">
+              |
+             </span>
+            </span>
+            <span>
+             <li>
+              <a href="https://www.gartner.com/en/about/policies/terms-of-use" rel="nofollow" target="termsOfService">
+               Terms of Service
+              </a>
+             </li>
+            </span>
+           </div>
+          </ul>
+          <div class="hidden-sm hidden-xs">
+           <div class="copyrightText">
+            ©
+            <span>
+            </span>
+            <div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="hidden-lg hidden-md" style="padding-bottom:10px">
+          <div class="copyrightText">
+           ©
+           <span>
+           </span>
+           <div>
+           </div>
+          </div>
+         </div>
+        </footer>
+        <div class="scrollToTop fadeOut hidden-xs">
+         <span alt="" class="glyphicon glyphicon-menu-up" data-interaction="" id="" title="">
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div id="hcaptcha-container">
+    </div>
+   </div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+   {"props":{"pageProps":{"serverSideXHRData":{"flagsAndPermissions":{"ReferTabSocialInviteShowFlag":true,"vendor-pledge":true,"disable-paste-in-survey":true,"partner-coi-prompt":true,"MC-Incentives-On":false,"likes-dislikes-content":true,"content-tagging-feature-flag":true,"vp-search-delay":false,"unified-profile":true,"alternatives-page-new":true,"disallow_registration_without_token":true,"vendor-profile-project":true,"partner-reviews-flag":true,"listing-guidelines":true,"pi-plus-resource-center":true,"process-vendor-product-profile-request":true,"vendor-engagement-intercom-flag":true,"alternative-page-feature-flag":true,"ReferTabResendInviteShowFlag":true,"vendor-compare-feature-flag":true,"pi-readership-analytics":true,"cc-winners-page":false,"pi-discovery-pro":true,"es-mvp-search":true,"Promo-Incentives-On":true,"ReferTabEmailInviteShowFlag":true,"new-vendor-product-landing-page":true},"pageData":{"hash":"1666997684728","addOneTrust":true},"pageInfo":{"image":"http://www.gartner.com/imagesrv/apps/peerinsights/images/gpi-twitter-img-fa.png","redirectURL":null,"canonicalUrl":null,"showComparePDF":true,"metaDesc":"Read this verified review Zoho Creator Rapid Mobile App Development (RMAD) Tools from the IT community.","link":"https://www.gartner.com/reviews/market/rapid-mobile-app-development-tools/vendor/zoho/product/zoho-creator/review/view/1130330","notFound":false,"noIndexFlag":true,"title":"Zoho Creator review in Rapid Mobile App Development (RMAD) Tools","follow":true},"hash":"1666997684728","jqueryHash":".0bdc04968d2fe6799360150868a8b8b6","gcrowd2Hash":"","getReviewPresentation":{"userEditEligible":false,"review":{"headline":"Go for this if you want to develop a application even if you are not a developer","summary":"Very good platform for developing application even if you are not a developer. But community forums helping this application is very less. So very limited resources to get an idea on the Queries. Thought Zoho's own forum helps you Quickly and also support hiring freelancers.","submitDate":"Nov 27, 2019","rating":3,"source":"Invited by Gartner (email, event, account rep)","upvote":0,"downvote":0,"implementationStrategy":"Worked with just the vendor","deploymentArchitecture":"Cloud (SaaS or PaaS or IaaS)","partnerReview":false,"user":{"id":115371600,"title":"Product Manager","industry":"Retail","companySize":"50M - 250M USD","function":"Product Management"},"market":{"id":1801,"name":"Rapid Mobile App Development Tools","seoName":"rapid-mobile-app-development-tools"},"vendor":{"id":1692,"name":"Zoho","seoName":"zoho"},"products":[{"id":22593,"name":"Zoho Creator","seoName":"zoho-creator","subscribed":false,"legacy":false}],"sections":[{"id":1,"questions":[{"key":"deployment-architecture-s24","title":"Deployment architecture","value":"Cloud (SaaS or PaaS or IaaS)","type":"text"}]},{"id":2,"title":"Lessons Learned","questions":[{"key":"review-rating","title":"Please rate your overall experience with this vendor","value":"3","type":"ratings"},{"key":"review-headline","title":"Create a headline summary of your review.","value":"Go for this if you want to develop a application even if you are not a developer","type":"text"},{"key":"review-summary","title":"Please provide comments on your overall experience","value":"Very good platform for developing application even if you are not a developer. But community forums helping this application is very less. So very limited resources to get an idea on the Queries. Thought Zoho's own forum helps you Quickly and also support hiring freelancers.","type":"text"},{"key":"lessonslearned-like-most","title":"What do you like most about the product or service?","value":"I like the predefined templates available. So it reduces our work in developing the applications from scratch. ","type":"text"},{"key":"lessonslearned-dislike-most","title":"What do you dislike most about the product or service?","value":"Very limited UI option and customisations available. They need to support with more case studies so we can explore the Zoho creator capabilities. ","type":"text"},{"key":"lessonslearned-you-did-differently-v2","title":"If you could start over, what would your organization do differently?","value":"We will definitely choose the zoho creator. At that pricing, zoho creator offers the best. ","type":"text"}]},{"id":3,"slug":"evaluation-contracting","title":"Evaluation \u0026 Contracting","ratingKey":"evaluation-contracting-overall","ratingValue":"5","questions":[{"key":"why-purchase-s24","title":"Why did you purchase this product or service?","value":["Enhance decision making","Cost management"],"type":"checkboxes"},{"key":"factors-drove-decision-s24","title":"What were the key factors that drove your decision?","value":"Pre-existing relationships","type":"checkboxes"},{"key":"understand-needs","title":"Ability to understand your organization's needs","value":"4","type":"ratings"},{"key":"timely-complete","title":"Timely and complete response to product questions","value":"4","type":"ratings"},{"key":"pricing-and-terms","title":"Pricing and contract flexibility (pricing and terms)","value":"4","type":"ratings"}]},{"id":4,"slug":"integration-deployment","title":"Integration \u0026 Deployment","ratingKey":"integration-deployment-overall","ratingValue":"5","questions":[{"key":"main-technologies","title":"What were the main technologies, platforms or products with which this product was integrated?","value":"Zoho desk, and CRM","type":"text"},{"key":"implementation-strategy","title":"What was your implementation strategy?","value":"Worked with just the vendor","type":"text"},{"key":"deployment-time","title":"How long did your deployment take?","value":"0 - 3 months (\u003c3)","type":"text"},{"key":"third-party-resources","title":"Availability of quality 3rd-party resources (integrators, service providers, etc.)","value":"5","type":"ratings"},{"key":"ease-of-integration","title":"Ease of integration using standard APIs and tools","value":"5","type":"ratings"},{"key":"end-user-training","title":"Quality and availability of end-user training","value":"2","type":"ratings"},{"key":"deployment-ease","title":"Ease of deployment","value":"4","type":"ratings"}]},{"id":5,"slug":"service-support","title":"Service \u0026 Support","ratingKey":"service-support-overall","ratingValue":"5","questions":[{"key":"timeliness-of-response","title":"Timeliness of vendor's response","value":"5","type":"ratings"},{"key":"support-quality","title":"Quality of technical support","value":"5","type":"ratings"},{"key":"community-quality","title":"Quality of peer user community","value":"2","type":"ratings"},{"key":"purchase-support","title":"Did your organization purchase a support package from the vendor?","value":"Yes","type":"text"}]},{"id":6,"slug":"product-capabilities","title":"Product Capabilities","ratingKey":"capabilities-overall","ratingValue":"4","questions":[{"key":"capabilities-overall","title":"Overall rating of product capabilities","value":"4","type":"ratings"}]},{"id":7,"slug":"additional-context","title":"Additional Context","questions":[{"key":"deployment-scale","title":"How extensively is this product or service being used in your organization?","value":" Team/ Individual","type":"text"},{"key":"deployment-country-multi","title":"In which country(s) did your deployment take place?","value":"India","type":"text"}]}]},"isAdmin":false,"voteEligible":false},"dci":{"injections":[]},"allResponsesAreValid":true},"isStatic":false,"query":{"marketSeoName":"rapid-mobile-app-development-tools","vendorSeoName":"zoho","productSeoName":"zoho-creator","reviewId":"1130330"},"params":{"marketSeoName":"rapid-mobile-app-development-tools","vendorSeoName":"zoho","productSeoName":"zoho-creator","reviewId":"1130330"},"windowGlobals":{"isLoggedIn":false,"botRequest":false,"generatingPDF":false,"isDev":false,"enableDelayedScripts":true,"href":"internal.pi.pdo.aws.gartner.com/market/rapid-mobile-app-development-tools/vendor/zoho/product/zoho-creator/review/view/1130330","pathname":"/reviews/market/rapid-mobile-app-development-tools/vendor/zoho/product/zoho-creator/review/view/1130330","search":"","flagsAndPermissions":{"ReferTabSocialInviteShowFlag":true,"vendor-pledge":true,"disable-paste-in-survey":true,"partner-coi-prompt":true,"MC-Incentives-On":false,"likes-dislikes-content":true,"content-tagging-feature-flag":true,"vp-search-delay":false,"unified-profile":true,"alternatives-page-new":true,"disallow_registration_without_token":true,"vendor-profile-project":true,"partner-reviews-flag":true,"listing-guidelines":true,"pi-plus-resource-center":true,"process-vendor-product-profile-request":true,"vendor-engagement-intercom-flag":true,"alternative-page-feature-flag":true,"ReferTabResendInviteShowFlag":true,"vendor-compare-feature-flag":true,"pi-readership-analytics":true,"cc-winners-page":false,"pi-discovery-pro":true,"es-mvp-search":true,"Promo-Incentives-On":true,"ReferTabEmailInviteShowFlag":true,"new-vendor-product-landing-page":true}},"cssFilenames":["UXDMasterStyleSheet","piUserMaster"],"stylesheets":["UXDMasterStyleSheet.min.1666997684728","piUserMaster.min.1666997684728"],"userSpaRouteKey":"readReviewsDisplayProduct","viewType":"REVIEW","isAdmin":false,"showLinkedinLogin":true,"environment":"prod","useNextJSStyleSheet":false},"__N_SSP":true},"page":"/market/[marketSeoName]/vendor/[vendorSeoName]/product/[productSeoName]/review/view/[reviewId]","query":{"marketSeoName":"rapid-mobile-app-development-tools","vendorSeoName":"zoho","productSeoName":"zoho-creator","reviewId":"1130330"},"buildId":"FWkdzKl8C6U0_VMSbLjpn","assetPrefix":"https://reviews.static.gartner.com","isFallback":false,"gssp":true,"customServer":true}
+  </script>
+  <script nomodule="" src="https://reviews.static.gartner.com/_next/static/chunks/polyfills-0dc9d96feb373d5c5c4e.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/framework.d774fe4d0a07d44ca52c.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/9994b0eecffbe44547c9c1d5b124e4d66550f1ad.6d4cdf53ef7b4cfb4b62.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/2e4aca677658372d3ab1e7160d642e9bf8e08f09.8fabbb116b16c6a4ee8b.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/main-d7c9e1b3e5231b97d1f4.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/b637e9a5.df4388f5cd062a268648.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/75fc9c18.c5f381fba2b0f9a9f346.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/42e52869ddbc5c600a7a7721c9235b85ca3e5b13.35863f4907f6361f435a.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/386218a4e99e04b3a9a40589bed6ee9e5f9bbebb.ff6936c8033525ce067e.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/pages/_app-1e25a5074d2f12476f78.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/af0296c323f6a060a9de85a619d2576e57fbd107.38afbea8e13b65973d8f.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/a3fa968063bb35b01d4d9940f264d94b42a98360.8c90bd4db8be57765795.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/2709300db6e4c8f8ee0045c71505ecd4ca3874a7.91cbf5de0c2ebdf00e73.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/12ad142e172cc31f25587066fd7581efa6831d7a.6d166a9dd02e5628385a.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/cfdf78f8ef47b3caa42901c04b7866186738505f.a897f0fbafe0a1e46e11.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/4ddff16fe74e6e4d730d263c9f49c30c134e13fb.5cdfb006943f83c07d87.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/e638452325d6388dd69ba5b0145b3fc670e28c4a.6c0d12dfa1835a4a545d.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/d558889d9a57bacc720447f0bbd44388f5ce2deb_CSS.08230c7570daf1d4025b.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/81d30e9d48215c604b211896b6a97a2e8c6b9cd6.6401448eb02c781b79bb.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/chunks/pages/market/%5BmarketSeoName%5D/vendor/%5BvendorSeoName%5D/product/%5BproductSeoName%5D/review/view/%5BreviewId%5D-6f2c2e360878699dce04.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/FWkdzKl8C6U0_VMSbLjpn/_buildManifest.js">
+  </script>
+  <script async="" src="https://reviews.static.gartner.com/_next/static/FWkdzKl8C6U0_VMSbLjpn/_ssgManifest.js">
+  </script>
+ </body>
+</html>
